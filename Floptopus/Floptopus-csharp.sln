@@ -1,9 +1,9 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
-Project("{9A45010C-A5AE-DF54-CDA4-40E7FFC9A1E0}") = "Floptopus", "Assembly-CSharp-firstpass.csproj", "{C5145EB6-BE26-55EA-81BB-7F4A58668CE0}"
+Project("{9A45010C-A5AE-DF54-CDA4-40E7FFC9A1E0}") = "Floptopus", "Assembly-CSharp-firstpass-vs.csproj", "{C5145EB6-BE26-55EA-81BB-7F4A58668CE0}"
 EndProject
-Project("{9A45010C-A5AE-DF54-CDA4-40E7FFC9A1E0}") = "Floptopus", "Assembly-CSharp.csproj", "{9B91F12C-57D0-D884-E3E5-88F75CB6B077}"
+Project("{9A45010C-A5AE-DF54-CDA4-40E7FFC9A1E0}") = "Floptopus", "Assembly-CSharp-vs.csproj", "{9B91F12C-57D0-D884-E3E5-88F75CB6B077}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,7 +23,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																GlobalSection(MonoDevelopProperties) = preSolution
+																	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
