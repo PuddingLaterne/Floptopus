@@ -238,7 +238,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 625678274}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 030fa675a18295c4d8aacd76d0fe304c, type: 3}
   m_Name: 
@@ -297,7 +297,8 @@ MonoBehaviour:
   jumpTime: .0500000007
   minJumpHold: .100000001
   maxJumpHold: 1
-  jumpStrength: 1
+  jumpStrength: 8
+  tilt: 3
 --- !u!23 &789267171
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -328,7 +329,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 789267168}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: fb09355b4354c804895cad03543ba2b5, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -438,7 +439,7 @@ GameObject:
   - 65: {fileID: 1666964751}
   - 114: {fileID: 1666964750}
   m_Layer: 0
-  m_Name: GroundContact
+  m_Name: EnvironmentCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

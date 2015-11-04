@@ -5,18 +5,17 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5;
 	public float jumpTime = 1.0f;
-	public float minJumpHold = 0.1f;
-	public float maxJumpHold = 1.0f;
-    public float jumpStrength = 1;
-    public float tilt = 1;
+    public float jumpHoldThreshold = 0.5f;
 
 	private Vector3 viewDirection;
     private Vector3 direction;
 	private Vector3 jumpDirection;
     private Rigidbody rb;
-    private GroundContact ground;
+    private EnvironmentCheck environment;
 	private float jumpHeldTime;
-	private bool jumpPressed;
+    private float tilt;
+    private float jumpStrength;
+    private bool jumpPressed;
     private bool jumping;
 	private float timeSinceJump;
 
@@ -26,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
 		jumpHeldTime = 0.0f;
 		jumpPressed = false;
         rb = GetComponent<Rigidbody>();
-        ground = GetComponentInChildren<GroundContact>();
+        environment = GetComponentInChildren<EnvironmentCheck>();
         jumping = false;
 	}
 	
@@ -37,35 +36,31 @@ public class PlayerMovement : MonoBehaviour
 		direction.y = 0;
 		timeSinceJump += Time.deltaTime;
         if (timeSinceJump < jumpTime)
-            direction += jumpDirection;
+            direction += jumpDirection * (1 - timeSinceJump);
         else
         {
             //jumping = false;
-            if (!ground.IsGrounded())
+            if (!environment.IsGrounded())
             {
                 jumpDirection.y = 0;
                 jumpDirection = jumpDirection * 0.95f;
                 direction += jumpDirection;
             }
-  
+
         }
         rb.velocity = new Vector3(direction.x * speed, rb.velocity.y + direction.y,  direction.z * speed);
         LookInDirection();
 
-        if (ground.IsGrounded() && (timeSinceJump > jumpTime))
+        if (environment.IsGrounded() && (timeSinceJump > jumpTime))
             jumping = false;
 
-        if (Input.GetButton("Jump") && ground.IsGrounded())
+        if (Input.GetButton("Jump") && environment.IsGrounded())
 			jumpPressed = true;
         if (jumpPressed)
         {
             jumpHeldTime += Time.deltaTime;
-            if (jumpHeldTime > maxJumpHold)
-                jumpHeldTime = maxJumpHold;
-            if (jumpHeldTime < minJumpHold)
-                jumpHeldTime = minJumpHold;
         }
-		if (!Input.GetButton ("Jump") && jumpPressed && timeSinceJump > jumpTime && ground.IsGrounded()) // Jump-Button released;
+		if (!Input.GetButton ("Jump") && jumpPressed && timeSinceJump > jumpTime && environment.IsGrounded()) // Jump-Button released;
 			Jump ();
 
     }
@@ -77,25 +72,32 @@ public class PlayerMovement : MonoBehaviour
 		    Vector3 view = new Vector3(direction.x, 0, direction.z);
             if (jumping)
                 view.y = rb.velocity.y;
-            if(view.y != 0)
-               Debug.Log(view);
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(view), Time.deltaTime * 5);
+            view = rb.velocity;
+            if (view.y < 0)
+                view.y = view.y / 3;
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(view), Time.deltaTime * 10);
         }
+        if(!jumping)
+          transform.eulerAngles = new Vector3(Mathf.LerpAngle(transform.eulerAngles.x, 0, Time.deltaTime * 5), transform.eulerAngles.y, transform.eulerAngles.z);
 
     }
 
 	void Jump()
 	{
-        jumpHeldTime = jumpHeldTime * 10;
-        //jumpDirection = transform.forward + Vector3.up * jumpHeldTime / 2;
-        //jumpDirection.Normalize ();
-        //jumpDirection = jumpDirection * jumpHeldTime * jumpStrength;
+        if(jumpHeldTime >= jumpHoldThreshold)
+        {
+            tilt = 2;
+            jumpStrength = 11;
+        }
+        else
+        {
+            tilt = 1.5f;
+            jumpStrength = 5;
+        }
 
         jumpDirection = transform.forward + Vector3.up * tilt;
         jumpDirection.Normalize();
         jumpDirection = jumpDirection * jumpStrength;
-
-        //big jump: 15, 20, small jump 5, 3 , dash 10, 4
 
         jumpPressed = false;
 		jumpHeldTime = 0.0f;
