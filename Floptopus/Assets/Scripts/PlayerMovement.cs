@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour
 	private Vector3 viewDirection;
     private Vector3 direction;
 	private Vector3 jumpDirection;
-    private CharacterController rb;
+    private CharacterController controller;
     private EnvironmentCheck environment;
 	private float jumpHeldTime;
     private float tilt;
@@ -19,58 +19,72 @@ public class PlayerMovement : MonoBehaviour
     private bool jumpPressed;
     private bool jumping;
 	private bool grounded;
+	private bool groundedTmp;
 	private float timeSinceJump;
+	private float stickiness;
+	private bool lastGroundcheck;
 
 	// Use this for initialization
 	void Start ()
     {
 		jumpHeldTime = 0.0f;
 		jumpPressed = false;
-        rb = GetComponent<CharacterController>();
+        controller = GetComponent<CharacterController>();
         jumping = false;
 		grounded = false;
+		lastGroundcheck = false;
+		stickiness = 1;
 	}
-	
-	// Update is called once per frame
+
+	void Update()
+	{
+		grounded = controller.isGrounded;
+	}
+
 	void FixedUpdate ()
     {
-        direction = Camera.main.transform.forward * Input.GetAxis("Vertical") + Camera.main.transform.right * Input.GetAxis("Horizontal");
+		direction = (Camera.main.transform.forward * Input.GetAxis("Vertical") + Camera.main.transform.right * Input.GetAxis("Horizontal")) * speed;
 		direction.y = 0;
-		direction = direction * speed;
 
-		if (!rb.isGrounded) 
+
+		float gravityInfluence = timeSinceJump;
+		if(timeSinceJump > 1.0f)
+			gravityInfluence = 1.0f;
+		direction -= Vector3.up * gravity * gravityInfluence * Time.deltaTime;
+
+		if (grounded && timeSinceJump > 0.2f) 
 		{
-			float gravityInfluence = timeSinceJump;
-			if(timeSinceJump > 1.0f)
-				gravityInfluence = 1.0f;
-			direction -= Vector3.up * gravity * gravityInfluence * 10 * Time.deltaTime;
-		}
-		if (rb.isGrounded && timeSinceJump > 0.2f)
 			jumping = false;
+			timeSinceJump = 0;
+		}
 
 		timeSinceJump += Time.deltaTime;
+
 		if (jumping) 
 			direction += jumpDirection * Time.deltaTime * 100;
 
-		rb.Move(new Vector3(direction.x * Time.deltaTime, direction.y * Time.deltaTime,  direction.z * Time.deltaTime));
-
-        LookInDirection();
-
-        if (Input.GetButton("Jump"))
+        if (Input.GetButton("Jump") && Input.GetButton("Shift"))
 			jumpPressed = true;
         if (jumpPressed)
             jumpHeldTime += Time.deltaTime;
-		if (!Input.GetButton ("Jump") && jumpPressed && rb.isGrounded) // Jump-Button released;
+		if (!Input.GetButton ("Jump") && jumpPressed && grounded) // Jump-Button released;
+			Dash ();
+
+		if (Input.GetButton ("Jump") && !Input.GetButton ("Shift") && grounded)
 			Jump ();
 
+		direction = new Vector3 (direction.x, direction.y * stickiness, direction.z);
+		controller.Move(new Vector3(direction.x * Time.deltaTime, direction.y * Time.deltaTime,  direction.z * Time.deltaTime));
+		
+		LookInDirection();
     }
 
     void LookInDirection()
     {
 
 	    Vector3 view = new Vector3(direction.x, 0, direction.z);
-		if (jumping)
-            view.y = rb.velocity.y;
+		if (!grounded)
+			view.y = controller.velocity.y;
 		if(view != Vector3.zero)
         	transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(view), Time.deltaTime * 10);
 		if(!jumping)
@@ -79,6 +93,13 @@ public class PlayerMovement : MonoBehaviour
     }
 
 	void Jump()
+	{
+		jumpDirection = Vector3.up * 25;
+		timeSinceJump = 0.0f;
+		jumping = true;
+	}
+
+	void Dash()
 	{
         if(jumpHeldTime >= jumpHoldThreshold)
         {
@@ -98,4 +119,13 @@ public class PlayerMovement : MonoBehaviour
 		timeSinceJump = 0.0f;
         jumping = true;
 	}
+
+	public void StickToSurface(bool stick)
+	{
+		if (stick)
+			stickiness = 0.1f;
+		else
+			stickiness = 1.0f;
+	}
+	
 }
