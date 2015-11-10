@@ -12,11 +12,23 @@ public class StickySurface : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.CompareTag ("Player"))
-			player.StickToSurface (true);
+        if (other.CompareTag("Player"))
+        {
+            player.StickToSurface(true);
+        }
 	}
 
-	void OnTriggerExit(Collider other)
+    void OnCollisionEnter(Collision other)
+    {
+        Debug.Log("collision");
+        if (other.collider.CompareTag("Player"))
+        {
+            Debug.Log("player collision");
+            player.StickToSurface(true);
+        }
+    }
+
+    void OnTriggerExit(Collider other)
 	{
 		if (other.CompareTag ("Player"))
 			player.StickToSurface (false);

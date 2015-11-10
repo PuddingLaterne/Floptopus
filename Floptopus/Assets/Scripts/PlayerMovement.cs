@@ -12,27 +12,26 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 direction;
 	private Vector3 jumpDirection;
     private CharacterController controller;
-    private EnvironmentCheck environment;
 	private float jumpHeldTime;
     private float tilt;
     private float jumpStrength;
     private bool jumpPressed;
     private bool jumping;
 	private bool grounded;
-	private bool groundedTmp;
 	private float timeSinceJump;
 	private float stickiness;
-	private bool lastGroundcheck;
+    private bool stuck;
 
 	// Use this for initialization
 	void Start ()
     {
+        direction = Vector3.zero;
 		jumpHeldTime = 0.0f;
 		jumpPressed = false;
         controller = GetComponent<CharacterController>();
         jumping = false;
 		grounded = false;
-		lastGroundcheck = false;
+        stuck = false;
 		stickiness = 1;
 	}
 
@@ -46,13 +45,12 @@ public class PlayerMovement : MonoBehaviour
 		direction = (Camera.main.transform.forward * Input.GetAxis("Vertical") + Camera.main.transform.right * Input.GetAxis("Horizontal")) * speed;
 		direction.y = 0;
 
-
 		float gravityInfluence = timeSinceJump;
 		if(timeSinceJump > 1.0f)
 			gravityInfluence = 1.0f;
 		direction -= Vector3.up * gravity * gravityInfluence * Time.deltaTime;
 
-		if (grounded && timeSinceJump > 0.2f) 
+		if (grounded && timeSinceJump > 0.1f) 
 		{
 			jumping = false;
 			timeSinceJump = 0;
@@ -70,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
 		if (!Input.GetButton ("Jump") && jumpPressed && grounded) // Jump-Button released;
 			Dash ();
 
-		if (Input.GetButton ("Jump") && !Input.GetButton ("Shift") && grounded)
+		if (Input.GetButton ("Jump") && !Input.GetButton ("Shift") && (grounded || stuck) && !jumpPressed)
 			Jump ();
 
 		direction = new Vector3 (direction.x, direction.y * stickiness, direction.z);
@@ -95,6 +93,8 @@ public class PlayerMovement : MonoBehaviour
 	void Jump()
 	{
 		jumpDirection = Vector3.up * 25;
+        if (stuck)
+            jumpDirection = transform.forward * -30;
 		timeSinceJump = 0.0f;
 		jumping = true;
 	}
@@ -122,10 +122,12 @@ public class PlayerMovement : MonoBehaviour
 
 	public void StickToSurface(bool stick)
 	{
+        stuck = stick;
 		if (stick)
 			stickiness = 0.1f;
 		else
 			stickiness = 1.0f;
 	}
-	
+
+    public bool IsJumping() { return jumping;}
 }
