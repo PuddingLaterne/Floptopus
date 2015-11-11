@@ -37,7 +37,7 @@ public class CameraMovement : MonoBehaviour
             target = new Vector3(transform.position.x - player.transform.position.x, 10, transform.position.z -player.transform.position.z);
         }
 
-        if (following && !playerMovement.IsJumping())
+        if (following)
             FollowPlayer();
 	}
 

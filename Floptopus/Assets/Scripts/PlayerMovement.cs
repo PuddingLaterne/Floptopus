@@ -8,25 +8,31 @@ public class PlayerMovement : MonoBehaviour
     public float jumpHoldThreshold = 0.5f;
 	public float gravity = 10;
 
-	private Vector3 viewDirection;
-    private Vector3 direction;
-	private Vector3 jumpDirection;
-    private CharacterController controller;
-	private float jumpHeldTime;
-    private float tilt;
-    private float jumpStrength;
-    private bool jumpPressed;
-    private bool jumping;
-	private bool grounded;
-	private float timeSinceJump;
-	private float stickiness;
-    private bool stuck;
+	Vector3 viewDirection;
+    Vector3 direction;
+	Vector3 jumpDirection;
+    Vector3 wallJumpDirection;
+    CharacterController controller;
+	float dashHeldTime;
+    float tilt;
+    float jumpStrength;
+    bool jumpPressed;
+    bool dashPressed;
+    bool jumpReleased;
+    bool jumping;
+	bool grounded;
+
+	float timeSinceJump;
+	float stickiness;
+    bool stuck;
 
 	// Use this for initialization
 	void Start ()
     {
+        jumpReleased = true;
         direction = Vector3.zero;
-		jumpHeldTime = 0.0f;
+        wallJumpDirection = Vector3.zero;
+		dashHeldTime = 0.0f;
 		jumpPressed = false;
         controller = GetComponent<CharacterController>();
         jumping = false;
@@ -61,15 +67,20 @@ public class PlayerMovement : MonoBehaviour
 		if (jumping) 
 			direction += jumpDirection * Time.deltaTime * 100;
 
-        if (Input.GetButton("Jump") && Input.GetButton("Shift"))
-			jumpPressed = true;
-        if (jumpPressed)
-            jumpHeldTime += Time.deltaTime;
-		if (!Input.GetButton ("Jump") && jumpPressed && grounded) // Jump-Button released;
-			Dash ();
+        if (Input.GetButton("Shift"))
+        {
+            dashPressed = true;
+            dashHeldTime += Time.deltaTime;
 
-		if (Input.GetButton ("Jump") && !Input.GetButton ("Shift") && (grounded || stuck) && !jumpPressed)
+        }
+		if (!Input.GetButton ("Shift") && dashPressed && grounded) //dash-button released
+			Dash (); 
+
+		if (Input.GetButton ("Jump") && (grounded || stuck) && jumpReleased)
 			Jump ();
+
+        if (jumpPressed && !Input.GetButton("Jump"))
+            jumpReleased = true;
 
 		direction = new Vector3 (direction.x, direction.y * stickiness, direction.z);
 		controller.Move(new Vector3(direction.x * Time.deltaTime, direction.y * Time.deltaTime,  direction.z * Time.deltaTime));
@@ -79,29 +90,31 @@ public class PlayerMovement : MonoBehaviour
 
     void LookInDirection()
     {
-
 	    Vector3 view = new Vector3(direction.x, 0, direction.z);
-		if (!grounded)
-			view.y = controller.velocity.y;
-		if(view != Vector3.zero)
-        	transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(view), Time.deltaTime * 10);
-		if(!jumping)
-          transform.eulerAngles = new Vector3(Mathf.LerpAngle(transform.eulerAngles.x, 0, Time.deltaTime * 5), transform.eulerAngles.y, transform.eulerAngles.z);
-
+        if (!grounded && !stuck)
+            view.y = controller.velocity.y;
+        if (view != Vector3.zero)
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(view), Time.deltaTime * 10);
+        if (!jumping && (!stuck || grounded))
+            transform.eulerAngles = new Vector3(Mathf.LerpAngle(transform.eulerAngles.x, 0, Time.deltaTime * 5), transform.eulerAngles.y, transform.eulerAngles.z);
+        if(stuck && !grounded)
+            transform.eulerAngles = new Vector3(Mathf.LerpAngle(transform.eulerAngles.x, -180, Time.deltaTime * 5), transform.eulerAngles.y, transform.eulerAngles.z);
     }
 
 	void Jump()
 	{
+        jumpPressed = true;
+        jumpReleased = false;
 		jumpDirection = Vector3.up * 25;
         if (stuck)
-            jumpDirection = transform.forward * -30;
+            jumpDirection = wallJumpDirection * 20 + Vector3.up * 20;
 		timeSinceJump = 0.0f;
 		jumping = true;
 	}
 
 	void Dash()
 	{
-        if(jumpHeldTime >= jumpHoldThreshold)
+        if(dashHeldTime >= jumpHoldThreshold)
         {
             tilt = 2;
             jumpStrength = 30;
@@ -114,8 +127,8 @@ public class PlayerMovement : MonoBehaviour
         jumpDirection = transform.forward + Vector3.up * tilt;
         jumpDirection.Normalize();
         jumpDirection = jumpDirection * jumpStrength;
-        jumpPressed = false;
-		jumpHeldTime = 0.0f;
+        dashPressed = false;
+		dashHeldTime = 0.0f;
 		timeSinceJump = 0.0f;
         jumping = true;
 	}
@@ -130,4 +143,9 @@ public class PlayerMovement : MonoBehaviour
 	}
 
     public bool IsJumping() { return jumping;}
+
+    public void SetWallJumpDirection(Vector3 direction)
+    {
+        wallJumpDirection = direction;
+    }
 }

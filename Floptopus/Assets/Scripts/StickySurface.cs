@@ -3,11 +3,13 @@ using System.Collections;
 
 public class StickySurface : MonoBehaviour 
 {
-	PlayerMovement player;
-	// Use this for initialization
+    PlayerMovement player;
+    Vector3 faceDirection;
+
 	void Start () 
 	{
 		player = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerMovement> ();
+        faceDirection = transform.forward;
 	}
 
 	void OnTriggerEnter(Collider other)
@@ -15,25 +17,13 @@ public class StickySurface : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             player.StickToSurface(true);
+            player.SetWallJumpDirection(faceDirection);
         }
 	}
-
-    void OnCollisionEnter(Collision other)
-    {
-        Debug.Log("collision");
-        if (other.collider.CompareTag("Player"))
-        {
-            Debug.Log("player collision");
-            player.StickToSurface(true);
-        }
-    }
 
     void OnTriggerExit(Collider other)
 	{
 		if (other.CompareTag ("Player"))
 			player.StickToSurface (false);
 	}
-
-
-
 }
