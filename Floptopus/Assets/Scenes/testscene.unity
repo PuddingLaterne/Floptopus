@@ -371,8 +371,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  horizontalFollowSpeed: 1
-  verticalFollowSpeed: .100000001
+  horizontalFollowSpeed: 5
+  verticalFollowSpeed: 2
+  horizontalMoveSpeed: 5
+  verticalMoveSpeed: 5
+  zoomSpeed: 400
+  minRadius: 10
+  maxRadius: 30
 --- !u!1 &789267168
 GameObject:
   m_ObjectHideFlags: 0

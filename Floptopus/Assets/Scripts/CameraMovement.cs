@@ -25,7 +25,7 @@ public class CameraMovement : MonoBehaviour
         {
             angleX -= Input.GetAxis("Mouse X") * Time.deltaTime * horizontalMoveSpeed;
             angleY -= Input.GetAxis("Mouse Y") * Time.deltaTime * verticalMoveSpeed;
-            if(Mathf.Cos(angleY) <= 0)
+            if (Mathf.Cos(angleY) <= 0.1f || Mathf.Cos(angleY) >= 0.9f)
                 angleY += Input.GetAxis("Mouse Y") * Time.deltaTime * verticalMoveSpeed;
         }
 
