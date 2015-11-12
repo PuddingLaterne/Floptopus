@@ -91,14 +91,17 @@ public class PlayerMovement : MonoBehaviour
     void LookInDirection()
     {
 	    Vector3 view = new Vector3(direction.x, 0, direction.z);
-        if (!grounded && !stuck)
-            view.y = controller.velocity.y;
-        if (view != Vector3.zero)
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(view), Time.deltaTime * 10);
-        if (!jumping && (!stuck || grounded))
-            transform.eulerAngles = new Vector3(Mathf.LerpAngle(transform.eulerAngles.x, 0, Time.deltaTime * 5), transform.eulerAngles.y, transform.eulerAngles.z);
-        if(stuck && !grounded)
-            transform.eulerAngles = new Vector3(Mathf.LerpAngle(transform.eulerAngles.x, -180, Time.deltaTime * 5), transform.eulerAngles.y, transform.eulerAngles.z);
+        if (!stuck)
+        {
+            if (!grounded)
+                view.y = controller.velocity.y;
+            if (view != Vector3.zero)
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(view), Time.deltaTime * 10);
+            if (!jumping && grounded)
+                transform.eulerAngles = new Vector3(Mathf.LerpAngle(transform.eulerAngles.x, 0, Time.deltaTime * 5), transform.eulerAngles.y, transform.eulerAngles.z);
+        }
+        if (stuck && !grounded)
+            transform.eulerAngles = new Vector3(Mathf.LerpAngle(transform.eulerAngles.x, -90, Time.deltaTime * 5), transform.eulerAngles.y, transform.eulerAngles.z);
     }
 
 	void Jump()
@@ -142,10 +145,13 @@ public class PlayerMovement : MonoBehaviour
 			stickiness = 1.0f;
 	}
 
-    public bool IsJumping() { return jumping;}
-
-    public void SetWallJumpDirection(Vector3 direction)
+    void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        wallJumpDirection = direction;
+        if (hit.collider.gameObject.CompareTag("StickySurface"))
+        {
+            wallJumpDirection = hit.normal;
+        }
     }
+
+    public bool IsJumping() { return jumping;}
 }
