@@ -3,70 +3,41 @@ using System.Collections;
 
 public class CameraMovement : MonoBehaviour
 {
-    public float minPlayerDistance = 1;
-    public float maxPlayerDistance = 10;
+    public Transform target;
+    public float horizontalFollowSpeed = 5.0f, verticalFollowSpeed = 0.5f, horizontalMoveSpeed = 5.0f, verticalMoveSpeed = 5.0f, zoomSpeed = 3000.0f;
+    public float minRadius = 10.0f, maxRadius = 50.0f;
+    Vector3 targetPoint;
+    float radius = 3f, angleX = 0f, angleY = -45f;
 
-    float playerDistance;
-	float angle;
-    Vector3 offset;
-	Vector3 target;
-
-    private GameObject player;
-    private PlayerMovement playerMovement;
-    private bool following;
-    private float lastChange;
-
-	// Use this for initialization
-	void Start ()
+    void Start()
     {
-        lastChange = 0.0f;
-		angle = 0;
-        playerDistance = (minPlayerDistance + maxPlayerDistance) / 2;
-        player = GameObject.FindGameObjectWithTag("Player");
-        playerMovement = player.GetComponent<PlayerMovement>();
+        target = GameObject.FindGameObjectWithTag("Player").transform;
+        radius = (minRadius + maxRadius) / 2;
+        targetPoint = target.position;
     }
-	
-	// Update is called once per frame
-	void LateUpdate ()
+
+    void Update()
     {
-        lastChange += Time.deltaTime;
-        if (Input.GetButton("Fire2") && lastChange > 0.2f)
+        radius -= Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime * zoomSpeed;
+        if (radius > maxRadius) radius = maxRadius;
+        if (radius < minRadius) radius = minRadius;
+        if(Input.GetButton("Fire1"))
         {
-            following = !following;
-            lastChange = 0.0f;
-            target = new Vector3(transform.position.x - player.transform.position.x, 10, transform.position.z -player.transform.position.z);
+            angleX -= Input.GetAxis("Mouse X") * Time.deltaTime * horizontalMoveSpeed;
+            angleY -= Input.GetAxis("Mouse Y") * Time.deltaTime * verticalMoveSpeed;
+            if(Mathf.Cos(angleY) <= 0)
+                angleY += Input.GetAxis("Mouse Y") * Time.deltaTime * verticalMoveSpeed;
         }
 
-        if (following)
-            FollowPlayer();
-	}
-
-	public static Vector3 RotatePointAroundPivot(Vector3 point, Vector3 pivot, Quaternion angle) 
-	{
-		return angle * ( point - pivot) + pivot;
-	}
-
-    void FollowPlayer()
-    {
-        playerDistance -= Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime * 1000;
-        if (playerDistance < minPlayerDistance)
-            playerDistance = minPlayerDistance;
-        if (playerDistance > maxPlayerDistance)
-            playerDistance = maxPlayerDistance;
-        if (Input.GetButton("Fire1"))
-        {
-            angle += Time.deltaTime * 100 * Input.GetAxis("Mouse X");
-            target -= Vector3.up * Input.GetAxis("Mouse Y");
-            if (target.y > 50)
-                target.y = 50;
-            if (target.y < 3)
-                target.y = 3;
-        }
-
-
-        offset = (RotatePointAroundPivot(target, player.transform.position, Quaternion.Euler(0, angle, 0))).normalized * playerDistance;
-
-        transform.LookAt(player.transform.position);
-        transform.position = Vector3.Lerp(transform.position, player.transform.position + offset, Time.deltaTime * 2);
+        float x = radius * Mathf.Cos(angleX) * Mathf.Sin(angleY);
+        float z = radius * Mathf.Sin(angleX) * Mathf.Sin(angleY);
+        float y = radius * Mathf.Cos(angleY);
+        targetPoint = new Vector3(Mathf.Lerp(targetPoint.x, target.position.x, Time.deltaTime * horizontalFollowSpeed), 
+                                  Mathf.Lerp(targetPoint.y, target.position.y, Time.deltaTime * verticalFollowSpeed), 
+                                  Mathf.Lerp(targetPoint.z, target.position.z, Time.deltaTime * horizontalFollowSpeed));
+        transform.position = new Vector3(x + targetPoint.x,
+                                         y + targetPoint.y,
+                                         z + targetPoint.z);
+        transform.LookAt(targetPoint);
     }
 }

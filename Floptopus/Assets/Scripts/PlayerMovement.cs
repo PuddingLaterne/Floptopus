@@ -26,7 +26,6 @@ public class PlayerMovement : MonoBehaviour
 	float stickiness;
     bool stuck;
 
-	// Use this for initialization
 	void Start ()
     {
         jumpReleased = true;
@@ -43,13 +42,16 @@ public class PlayerMovement : MonoBehaviour
 
 	void Update()
 	{
+        LookInDirection();
 		grounded = controller.isGrounded;
 	}
 
 	void FixedUpdate ()
     {
-		direction = (Camera.main.transform.forward * Input.GetAxis("Vertical") + Camera.main.transform.right * Input.GetAxis("Horizontal")) * speed;
-		direction.y = 0;
+        Vector3 directionV = new Vector3(Camera.main.transform.forward.x, 0, Camera.main.transform.forward.z).normalized;
+        Vector3 directionH = new Vector3(Camera.main.transform.right.x, 0, Camera.main.transform.right.z).normalized;
+        direction = (directionV * Input.GetAxis("Vertical") + directionH * Input.GetAxis("Horizontal")) * speed;
+
 
 		float gravityInfluence = timeSinceJump;
 		if(timeSinceJump > 1.0f)
@@ -84,8 +86,6 @@ public class PlayerMovement : MonoBehaviour
 
 		direction = new Vector3 (direction.x, direction.y * stickiness, direction.z);
 		controller.Move(new Vector3(direction.x * Time.deltaTime, direction.y * Time.deltaTime,  direction.z * Time.deltaTime));
-		
-		LookInDirection();
     }
 
     void LookInDirection()
@@ -125,7 +125,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             tilt = 0.75f;
-            jumpStrength = 20;
+            jumpStrength = 25;
         }
         jumpDirection = transform.forward + Vector3.up * tilt;
         jumpDirection.Normalize();
