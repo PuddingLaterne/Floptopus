@@ -5,6 +5,8 @@ Project("{9A45010C-A5AE-DF54-CDA4-40E7FFC9A1E0}") = "Floptopus", "Assembly-CShar
 EndProject
 Project("{9A45010C-A5AE-DF54-CDA4-40E7FFC9A1E0}") = "Floptopus", "Assembly-CSharp-vs.csproj", "{9B91F12C-57D0-D884-E3E5-88F75CB6B077}"
 EndProject
+Project("{9A45010C-A5AE-DF54-CDA4-40E7FFC9A1E0}") = "Floptopus", "Assembly-CSharp-Editor-vs.csproj", "{1D1E765D-8152-4AC4-0DA0-1D96B314EF14}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +21,15 @@ Global
 		{9B91F12C-57D0-D884-E3E5-88F75CB6B077}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B91F12C-57D0-D884-E3E5-88F75CB6B077}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B91F12C-57D0-D884-E3E5-88F75CB6B077}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D1E765D-8152-4AC4-0DA0-1D96B314EF14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D1E765D-8152-4AC4-0DA0-1D96B314EF14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D1E765D-8152-4AC4-0DA0-1D96B314EF14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D1E765D-8152-4AC4-0DA0-1D96B314EF14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																																GlobalSection(MonoDevelopProperties) = preSolution
+																																																									GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour
 {
     public float speed = 5;
+    public float dashSpeedMultiplier = 1.5f;
 	public float jumpTime = 1.0f;
     public float jumpHoldThreshold = 0.5f;
 	public float gravity = 10;
@@ -43,7 +44,9 @@ public class PlayerMovement : MonoBehaviour
 	void Update()
 	{
         LookInDirection();
-		grounded = controller.isGrounded;
+        grounded = IsGrounded();
+        //IsGrounded();
+		//grounded = controller.isGrounded;
 	}
 
 	void FixedUpdate ()
@@ -51,6 +54,8 @@ public class PlayerMovement : MonoBehaviour
         Vector3 directionV = new Vector3(Camera.main.transform.forward.x, 0, Camera.main.transform.forward.z).normalized;
         Vector3 directionH = new Vector3(Camera.main.transform.right.x, 0, Camera.main.transform.right.z).normalized;
         direction = (directionV * Input.GetAxis("Vertical") + directionH * Input.GetAxis("Horizontal")) * speed;
+        if (dashPressed)
+            direction = direction * dashSpeedMultiplier;
 
 
 		float gravityInfluence = timeSinceJump;
@@ -109,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
         jumpPressed = true;
         jumpReleased = false;
 		jumpDirection = Vector3.up * 25;
-        if (stuck)
+        if (stuck && !grounded)
             jumpDirection = wallJumpDirection * 20 + Vector3.up * 20;
 		timeSinceJump = 0.0f;
 		jumping = true;
@@ -147,10 +152,24 @@ public class PlayerMovement : MonoBehaviour
 
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.collider.gameObject.CompareTag("StickySurface"))
+        if (hit.gameObject.CompareTag("StickySurface"))
         {
             wallJumpDirection = hit.normal;
         }
+        if (hit.collider.gameObject.CompareTag("Collectable"))
+        {
+            hit.gameObject.SetActive(false);
+        }
+    }
+
+    bool IsGrounded()
+    {
+        RaycastHit hit;
+        Ray ray = new Ray(transform.position + controller.center, - Vector3.up);
+        if(Physics.Raycast(ray, out hit, 3.0f))
+            return true;
+        else
+            return false;
     }
 
     public bool IsJumping() { return jumping;}
