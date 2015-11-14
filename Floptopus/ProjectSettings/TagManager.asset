@@ -8,6 +8,9 @@ TagManager:
   - PlayerHitbox
   - StickySurface
   - Collectable
+  - Enemy
+  - CollectableManager
+  - CollectableUI
   layers:
   - Default
   - TransparentFX

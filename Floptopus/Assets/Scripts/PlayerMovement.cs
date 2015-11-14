@@ -44,9 +44,8 @@ public class PlayerMovement : MonoBehaviour
 	void Update()
 	{
         LookInDirection();
-        grounded = IsGrounded();
-        //IsGrounded();
-		//grounded = controller.isGrounded;
+        //grounded = IsGrounded();
+        grounded = controller.isGrounded;
 	}
 
 	void FixedUpdate ()
@@ -145,7 +144,7 @@ public class PlayerMovement : MonoBehaviour
 	{
         stuck = stick;
 		if (stick)
-			stickiness = 0.1f;
+			stickiness = 0.05f;
 		else
 			stickiness = 1.0f;
 	}
@@ -158,7 +157,11 @@ public class PlayerMovement : MonoBehaviour
         }
         if (hit.collider.gameObject.CompareTag("Collectable"))
         {
-            hit.gameObject.SetActive(false);
+            hit.gameObject.GetComponent<Collectable>().PlayerContact();
+        }
+        if (hit.collider.gameObject.CompareTag("Enemy") && jumping)
+        {
+            hit.gameObject.GetComponent<Enemy>().JumpedAt(-hit.normal);
         }
     }
 

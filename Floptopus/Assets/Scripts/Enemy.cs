@@ -39,4 +39,12 @@ public class Enemy : MonoBehaviour
             targetIndex = 0;
         nav.SetDestination(patrolPoints[targetIndex].position);
     }
+
+    public void JumpedAt(Vector3 direction)
+    {
+        if (Vector3.Angle(transform.forward, direction) < 90)
+            Debug.Log("jumped at from behind");
+        else
+            Debug.Log("jumped at from front");
+    }
 }
