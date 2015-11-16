@@ -1,16 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityStandardAssets.ImageEffects;
 
 public class CameraMovement : MonoBehaviour
 {
     public Transform target;
     public float horizontalFollowSpeed = 5.0f, verticalFollowSpeed = 0.5f, horizontalMoveSpeed = 5.0f, verticalMoveSpeed = 5.0f, zoomSpeed = 3000.0f;
     public float minRadius = 10.0f, maxRadius = 50.0f;
+    DepthOfField dof;
     Vector3 targetPoint;
     float radius = 3f, angleX = 0f, angleY = -45f;
 
     void Start()
     {
+        dof = GetComponent<DepthOfField>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
         radius = (minRadius + maxRadius) / 2;
         targetPoint = target.position;
@@ -18,6 +21,7 @@ public class CameraMovement : MonoBehaviour
 
     void Update()
     {
+        dof.focalLength = radius;
         radius -= Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime * zoomSpeed;
         if (radius > maxRadius) radius = maxRadius;
         if (radius < minRadius) radius = minRadius;

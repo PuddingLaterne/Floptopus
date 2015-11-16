@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public float jumpHoldThreshold = 0.5f;
 	public float gravity = 10;
 
+    PlayerHealth health;
+
 	Vector3 viewDirection;
     Vector3 direction;
 	Vector3 jumpDirection;
@@ -29,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
 	void Start ()
     {
+        health = GetComponent<PlayerHealth>();
         jumpReleased = true;
         direction = Vector3.zero;
         wallJumpDirection = Vector3.zero;
@@ -99,13 +102,17 @@ public class PlayerMovement : MonoBehaviour
         {
             if (!grounded)
                 view.y = controller.velocity.y;
-            if (view != Vector3.zero)
+            if (view != Vector3.zero && !stuck)
                 transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(view), Time.deltaTime * 10);
             if (!jumping && grounded)
                 transform.eulerAngles = new Vector3(Mathf.LerpAngle(transform.eulerAngles.x, 0, Time.deltaTime * 5), transform.eulerAngles.y, transform.eulerAngles.z);
         }
-        if (stuck && !grounded)
-            transform.eulerAngles = new Vector3(Mathf.LerpAngle(transform.eulerAngles.x, -90, Time.deltaTime * 5), transform.eulerAngles.y, transform.eulerAngles.z);
+        if (stuck)
+        {
+            //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(-wallJumpDirection), Time.deltaTime * 10);
+            if(!grounded)
+                transform.eulerAngles = new Vector3(Mathf.LerpAngle(transform.eulerAngles.x, -90, Time.deltaTime * 5), transform.eulerAngles.y, transform.eulerAngles.z);
+        }
     }
 
 	void Jump()
@@ -113,7 +120,7 @@ public class PlayerMovement : MonoBehaviour
         jumpPressed = true;
         jumpReleased = false;
 		jumpDirection = Vector3.up * 25;
-        if (stuck && !grounded)
+        if (stuck)
             jumpDirection = wallJumpDirection * 20 + Vector3.up * 20;
 		timeSinceJump = 0.0f;
 		jumping = true;
@@ -159,9 +166,10 @@ public class PlayerMovement : MonoBehaviour
         {
             hit.gameObject.GetComponent<Collectable>().PlayerContact();
         }
-        if (hit.collider.gameObject.CompareTag("Enemy") && jumping)
+        if (hit.collider.gameObject.CompareTag("Enemy"))
         {
-            hit.gameObject.GetComponent<Enemy>().JumpedAt(-hit.normal);
+            if(jumping)
+                hit.gameObject.GetComponent<Enemy>().JumpedAt(-hit.normal);
         }
     }
 

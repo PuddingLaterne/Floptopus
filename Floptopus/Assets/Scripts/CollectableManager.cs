@@ -21,6 +21,7 @@ public class CollectableManager : MonoBehaviour
         {
             cUI.UpdateCollectableCount(currentAmountCollectables, totalAmountCollectables);
         }
-        //TODO: win game when all are found
+        if (currentAmountCollectables == totalAmountCollectables)
+            Application.LoadLevel(0);
     }
 }
