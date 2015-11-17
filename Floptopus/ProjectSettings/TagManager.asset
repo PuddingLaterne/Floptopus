@@ -12,6 +12,7 @@ TagManager:
   - CollectableManager
   - CollectableUI
   - PlayerHealthUI
+  - LooseObject
   layers:
   - Default
   - TransparentFX

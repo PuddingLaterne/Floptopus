@@ -8,10 +8,11 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: CollectableMaterial
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION
   m_LightmapFlags: 1
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -32,13 +33,6 @@ Material:
       data:
         first:
           name: _DetailNormalMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Ramp
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -85,6 +79,13 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Ramp
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -93,31 +94,27 @@ Material:
       data:
         first:
           name: _DstBlend
-        second: 0
+        second: 10
       data:
         first:
           name: _Cutoff
         second: .5
       data:
         first:
-          name: _Outline
-        second: .00300000003
-      data:
-        first:
           name: _Parallax
-        second: .0199999996
+        second: .0799999982
       data:
         first:
           name: _ZWrite
-        second: 1
+        second: 0
       data:
         first:
           name: _Glossiness
-        second: .300000012
+        second: .259000003
       data:
         first:
           name: _BumpScale
-        second: 1
+        second: -3.72000003
       data:
         first:
           name: _OcclusionStrength
@@ -133,20 +130,24 @@ Material:
       data:
         first:
           name: _Mode
-        second: 0
+        second: 3
       data:
         first:
           name: _Metallic
         second: 0
+      data:
+        first:
+          name: _Outline
+        second: .00300000003
     m_Colors:
       data:
         first:
           name: _EmissionColor
-        second: {r: 1, g: .970081151, b: .566176474, a: 1}
+        second: {r: .161764681, g: .156268626, b: .0820717886, a: 1}
       data:
         first:
           name: _Color
-        second: {r: 1, g: .8482759, b: 0, a: 1}
+        second: {r: 1, g: .8482759, b: 0, a: .774999976}
       data:
         first:
           name: _OutlineColor

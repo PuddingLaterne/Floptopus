@@ -9,10 +9,12 @@ public class CameraMovement : MonoBehaviour
     public float minRadius = 10.0f, maxRadius = 50.0f;
     DepthOfField dof;
     Vector3 targetPoint;
-    float radius = 3f, angleX = 0f, angleY = -45f;
+    public float radius = 3f, angleX = 110f, angleY = -45f;
 
     void Start()
     {
+        angleX = angleX * Mathf.Deg2Rad;
+        angleY = angleY * Mathf.Deg2Rad;
         dof = GetComponent<DepthOfField>();
         target = GameObject.FindGameObjectWithTag("Player").transform;
         radius = (minRadius + maxRadius) / 2;
