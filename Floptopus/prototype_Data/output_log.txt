@@ -2,16 +2,16 @@ Mono path[0] = 'C:/Users/sb-131529/Documents/GitHub/Floptopus/Floptopus/prototyp
 Mono path[1] = 'C:/Users/sb-131529/Documents/GitHub/Floptopus/Floptopus/prototype_Data/Mono'
 Mono config path = 'C:/Users/sb-131529/Documents/GitHub/Floptopus/Floptopus/prototype_Data/Mono/etc'
 PlayerConnection initialized from C:/Users/sb-131529/Documents/GitHub/Floptopus/Floptopus/prototype_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55028
-Multi-casting "[IP] 141.69.53.85 [Port] 55028 [Flags] 2 [Guid] 1789311938 [EditorId] 2684637104 [Version] 1048832 [Id] WindowsPlayer(ap053085) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [141.69.53.85:55028]
+PlayerConnection initialized network socket : 0.0.0.0 55135
+Multi-casting "[IP] 141.69.53.112 [Port] 55135 [Flags] 2 [Guid] 2698071381 [EditorId] 2684637104 [Version] 1048832 [Id] WindowsPlayer(ap053112) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [141.69.53.112:55135]
 Initialize engine version: 5.2.1f1 (44735ea161b3)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 980 (ID=0x13c0)
+    Renderer: NVIDIA GeForce GTX 780 (ID=0x1004)
     Vendor:   NVIDIA
-    VRAM:     3072 MB
+    VRAM:     3013 MB
 Begin MonoManager ReloadAssembly
 Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\UnityEngine.dll (this message is harmless)
 Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\UnityEngine.dll into Unity Child Domain
@@ -24,13 +24,246 @@ Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\M
 Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
 Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.218 seconds
-desktop: 1920x1080 60Hz; virtual: 3200x1080 at -1280,0
+- Completed reload, in  0.178 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
 Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\System.dll (this message is harmless)
-Setting up 3 worker threads for Enlighten.
-  Thread -> id: 1fac -> priority: 1 
-  Thread -> id: 1ca0 -> priority: 1 
-  Thread -> id: 1d08 -> priority: 1 
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 95c -> priority: 1 
+  Thread -> id: 1308 -> priority: 1 
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:914)
+PlayerMovement:LookInDirection() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:139)
+PlayerMovement:Update() (at C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:54)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 78] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 914)
+
