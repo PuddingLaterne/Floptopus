@@ -34,6 +34,8 @@ public class PlayerMovement : MonoBehaviour
 
     Player player;
 
+    Animator anim;
+
 	void Start ()
     {
         jumpReleased = true;
@@ -43,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
 		jumpPressed = false;
         controller = GetComponent<CharacterController>();
         player = GetComponent<Player>();
+        anim = GetComponent<Animator>();
         jumping = false;
 		grounded = false;
         stuck = false;
@@ -51,6 +54,7 @@ public class PlayerMovement : MonoBehaviour
 
 	void Update()
 	{
+        anim.SetFloat("speed", Mathf.Abs(controller.velocity.x) + Mathf.Abs(controller.velocity.z));
         LookInDirection();
         //grounded = IsGrounded();
         grounded = controller.isGrounded;
