@@ -185,6 +185,8 @@ public class PlayerMovement : MonoBehaviour
 
 	public void StickToSurface(bool stick)
 	{
+        if(stuck!= stick)
+            anim.SetBool("stick", stick);
         stuck = stick;
 		if (stick)
 			stickiness = 0.05f;

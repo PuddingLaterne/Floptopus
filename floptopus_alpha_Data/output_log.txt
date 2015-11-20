@@ -2,9 +2,9 @@ Mono path[0] = 'C:/Users/Stella/Documents/GitHub/Floptopus/floptopus_alpha_Data/
 Mono path[1] = 'C:/Users/Stella/Documents/GitHub/Floptopus/floptopus_alpha_Data/Mono'
 Mono config path = 'C:/Users/Stella/Documents/GitHub/Floptopus/floptopus_alpha_Data/Mono/etc'
 PlayerConnection initialized from C:/Users/Stella/Documents/GitHub/Floptopus/floptopus_alpha_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55088
-Multi-casting "[IP] 192.168.0.30 [Port] 55088 [Flags] 2 [Guid] 324344304 [EditorId] 3483239447 [Version] 1048832 [Id] WindowsPlayer(Stella-PC) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [192.168.0.30:55088]
+PlayerConnection initialized network socket : 0.0.0.0 55274
+Multi-casting "[IP] 192.168.0.30 [Port] 55274 [Flags] 2 [Guid] 1124946337 [EditorId] 3483239447 [Version] 1048832 [Id] WindowsPlayer(Stella-PC) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.0.30:55274]
 Initialize engine version: 5.1.0f2 (0e70286e975e)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -25,7 +25,7 @@ Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Da
 Loading C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.086 seconds
+- Completed reload, in  0.056 seconds
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
 <RI> Initializing input.
 <RI> Input initialized.
