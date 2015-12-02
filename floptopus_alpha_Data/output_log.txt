@@ -1,34 +1,43 @@
-Mono path[0] = 'C:/Users/Stella/Documents/GitHub/Floptopus/floptopus_alpha_Data/Managed'
-Mono path[1] = 'C:/Users/Stella/Documents/GitHub/Floptopus/floptopus_alpha_Data/Mono'
-Mono config path = 'C:/Users/Stella/Documents/GitHub/Floptopus/floptopus_alpha_Data/Mono/etc'
-PlayerConnection initialized from C:/Users/Stella/Documents/GitHub/Floptopus/floptopus_alpha_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55274
-Multi-casting "[IP] 192.168.0.30 [Port] 55274 [Flags] 2 [Guid] 1124946337 [EditorId] 3483239447 [Version] 1048832 [Id] WindowsPlayer(Stella-PC) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [192.168.0.30:55274]
+Mono path[0] = 'C:/Users/sb-131529/Documents/GitHub/Floptopus/floptopus_alpha_Data/Managed'
+Mono path[1] = 'C:/Users/sb-131529/Documents/GitHub/Floptopus/floptopus_alpha_Data/Mono'
+Mono config path = 'C:/Users/sb-131529/Documents/GitHub/Floptopus/floptopus_alpha_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/sb-131529/Documents/GitHub/Floptopus/floptopus_alpha_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55183
+Multi-casting "[IP] 141.69.53.93 [Port] 55183 [Flags] 2 [Guid] 3390796567 [EditorId] 3483239447 [Version] 1048832 [Id] WindowsPlayer(ap053093) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [141.69.53.93:55183]
 Initialize engine version: 5.1.0f2 (0e70286e975e)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 460 (ID=0xe24)
+    Renderer: NVIDIA GeForce GTX 980 (ID=0x13c0)
     Vendor:   NVIDIA
-    VRAM:     977 MB
+    VRAM:     3072 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.056 seconds
-desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.068 seconds
+desktop: 1920x1080 60Hz; virtual: 3200x1080 at -1280,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\floptopus_alpha_Data\Managed\System.dll (this message is harmless)
+Look rotation viewing vector is zero
+UnityEngine.Quaternion:INTERNAL_CALL_LookRotation(Vector3&, Vector3&)
+UnityEngine.Quaternion:LookRotation(Vector3) (at C:\buildslave\unity\build\artifacts\generated\common\runtime\MathBindings.gen.cs:865)
+PlayerMovement:LookInDirection() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:143)
+PlayerMovement:Update() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:58)
+
+[C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cpp line 71] 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/MathBindings.gen.cs Line: 865)
+

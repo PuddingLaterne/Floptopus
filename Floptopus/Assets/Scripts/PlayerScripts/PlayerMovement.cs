@@ -55,9 +55,9 @@ public class PlayerMovement : MonoBehaviour
 	void Update()
 	{
         anim.SetFloat("speed", Mathf.Abs(controller.velocity.x) + Mathf.Abs(controller.velocity.z));
+        anim.SetBool("jumping", jumping);
         LookInDirection();
-        //grounded = IsGrounded();
-        grounded = controller.isGrounded;
+        //grounded = controller.isGrounded;
 	}
 
 	void FixedUpdate ()
@@ -212,4 +212,9 @@ public class PlayerMovement : MonoBehaviour
     public bool IsJumping() { return jumping;}
 
     public void SetWallJumpDirection(Vector3 direction) { wallJumpDirection = direction; }
+
+    public void SetGrounded(bool grounded)
+    {
+        this.grounded = grounded;
+    }
 }
