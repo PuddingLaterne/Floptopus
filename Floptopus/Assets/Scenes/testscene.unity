@@ -1715,13 +1715,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 3.75999999
-  m_Radius: 2.03999996
+  m_Height: 3.8599999
+  m_Radius: 2.13000011
   m_SlopeLimit: 45
-  m_StepOffset: .300000012
+  m_StepOffset: 0
   m_SkinWidth: 9.99999975e-05
   m_MinMoveDistance: .00100000005
-  m_Center: {x: 0, y: 1.99000001, z: -.209999993}
+  m_Center: {x: 0, y: 2.08999991, z: -.239999995}
 --- !u!1001 &1181099694
 Prefab:
   m_ObjectHideFlags: 0

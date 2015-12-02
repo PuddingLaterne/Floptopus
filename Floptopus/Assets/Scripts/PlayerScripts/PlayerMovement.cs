@@ -146,6 +146,7 @@ public class PlayerMovement : MonoBehaviour
 
 	void Jump()
 	{
+        anim.SetBool("jumping", true);
         jumpPressed = true;
         jumpReleased = false;
 		jumpDirection = Vector3.up * 25;
