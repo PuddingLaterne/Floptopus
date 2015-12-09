@@ -4,9 +4,16 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour 
 {
+    public static PlayerHealth instance;
     public float maxHealth = 100;
     float currentHealth;
     Slider healthSlider ;
+
+    void Awake()
+    {
+        instance = this;
+    }
+
 	void Start () 
     {
         currentHealth = maxHealth;

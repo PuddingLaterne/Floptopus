@@ -3,18 +3,18 @@ using System.Collections;
 
 public class Ground : MonoBehaviour
 {
-    Player player;
+    PlayerMovement player;
 
 	void Start ()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
+        player = PlayerMovement.instance;
 	}
 	
 	void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
         {
-            player.movement.SetGrounded(true);
+            player.SetGrounded(true);
         }
     }
 
@@ -22,7 +22,7 @@ public class Ground : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            player.movement.SetGrounded(false);
+            player.SetGrounded(false);
         }
     }
 }

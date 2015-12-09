@@ -3,6 +3,8 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public static PlayerMovement instance;
+
     public float speed = 5;
     public float dashSpeedMultiplier = 1.5f;
 	public float jumpTime = 1.0f;
@@ -31,10 +33,17 @@ public class PlayerMovement : MonoBehaviour
 	float timeSinceJump;
 	float stickiness;
     bool stuck;
-
-    Player player;
+    bool falling = false;
+    float fallingTime = 0.0f;
+    bool falltriggered;
 
     Animator anim;
+    PlayerHealth health;
+
+    void Awake()
+    {
+        instance = this;
+    }
 
 	void Start ()
     {
@@ -44,8 +53,9 @@ public class PlayerMovement : MonoBehaviour
 		dashHeldTime = 0.0f;
 		jumpPressed = false;
         controller = GetComponent<CharacterController>();
-        player = GetComponent<Player>();
         anim = GetComponent<Animator>();
+        health = PlayerHealth.instance;
+
         jumping = false;
 		grounded = false;
         stuck = false;
@@ -57,7 +67,9 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("speed", Mathf.Abs(controller.velocity.x) + Mathf.Abs(controller.velocity.z));
         anim.SetBool("jumping", jumping);
         LookInDirection();
-        //grounded = controller.isGrounded;
+        grounded = controller.isGrounded;
+        if (grounded)
+            anim.SetTrigger("grounded");
 	}
 
 	void FixedUpdate ()
@@ -114,14 +126,42 @@ public class PlayerMovement : MonoBehaviour
 		controller.Move(new Vector3(direction.x * Time.deltaTime, direction.y * Time.deltaTime,  direction.z * Time.deltaTime));
 
         if (controller.velocity.y < 0 && oldVelocity.y >= 0)
+        {
+            falling = true;
             fallOrigin = transform.position;
+        }
+
+        if (controller.velocity.y == 0 || grounded)
+        {
+            falltriggered = false;
+            falling = false;
+            fallingTime = 0.0f;
+        }
+
+        if (falling)
+            fallingTime =+ Time.deltaTime;
+        if (fallingTime >= 0.01f && !falltriggered && !(stuck || onEdge))
+        {
+            falltriggered = true;
+            anim.SetTrigger("fall");
+        }
+
         if (stuck)
             fallOrigin = transform.position;
         if (controller.velocity.y == 0 && oldVelocity.y < 0)
         {
             if (Mathf.Abs(fallOrigin.y - transform.position.y) > 20)
-                player.health.TakeDamage(50);
+            {
+                anim.SetTrigger("crash");
+                health.TakeDamage(50);
+            }
+            else
+            {
+                if(fallingTime >= 0.01f)
+                    anim.SetTrigger("bounce");
+            }
         }
+        anim.SetBool("falling", falling);
                 
     }
 
@@ -130,18 +170,17 @@ public class PlayerMovement : MonoBehaviour
 	    Vector3 view = new Vector3(direction.x, 0, direction.z);
         if (!stuck)
         {
-            if (!grounded && !stuck && !onEdge)
-                view.y = controller.velocity.y;
             if (view != Vector3.zero && !stuck)
                 transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(view), Time.deltaTime * 10);
             if (!jumping && grounded)
                 transform.eulerAngles = new Vector3(Mathf.LerpAngle(transform.eulerAngles.x, 0, Time.deltaTime * 5), transform.eulerAngles.y, transform.eulerAngles.z);
         }
 
-        if (stuck || onEdge)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(-wallJumpDirection), Time.deltaTime * 10);
-        }
+        //if (stuck || onEdge)
+        //{
+            //Vector3 wallDirection = new Vector3(-wallJumpDirection.x, wallJumpDirection.y, -wallJumpDirection.z);
+            //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(wallDirection), Time.deltaTime * 10);
+        //}
     }
 
 	void Jump()
@@ -155,6 +194,7 @@ public class PlayerMovement : MonoBehaviour
             jumpDirection = Vector3.up * 25 - wallJumpDirection * 5;
 		timeSinceJump = 0.0f;
 		jumping = true;
+        anim.SetTrigger("jump");
 	}
 
 	void Dash()
@@ -181,12 +221,17 @@ public class PlayerMovement : MonoBehaviour
 		dashHeldTime = 0.0f;
 		timeSinceJump = 0.0f;
         jumping = true;
+        anim.SetTrigger("dash");
 	}
 
 	public void StickToSurface(bool stick)
 	{
-        if(stuck!= stick)
-            anim.SetBool("stick", stick);
+        if (stuck != stick)
+        {
+            anim.SetBool("sticking", stick);
+            if (stick)
+                anim.SetTrigger("stick");
+        }
         stuck = stick;
 		if (stick)
 			stickiness = 0.05f;
@@ -196,6 +241,14 @@ public class PlayerMovement : MonoBehaviour
 
     public void HoldOntoEdge(bool hold, Vector3 edge, Edge edgeScript)
     {
+        if (onEdge != hold)
+        {
+            anim.SetBool("hanging", hold);
+            if (hold)
+                anim.SetTrigger("hang");
+            anim.ResetTrigger("stick");
+        }
+
         this.edgeScript = edgeScript;
         this.edge = edge;
         if (!onEdge && hold)

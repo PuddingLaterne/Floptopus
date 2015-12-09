@@ -55,7 +55,7 @@
      <Compile Include="Assets\Scripts\Environment\LooseObject.cs" />
      <Compile Include="Assets\Scripts\Environment\StickySurface.cs" />
      <Compile Include="Assets\Scripts\LevelBoundaries.cs" />
-     <Compile Include="Assets\Scripts\PlayerScripts\Player.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\Ground.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerCollision.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerMovement.cs" />

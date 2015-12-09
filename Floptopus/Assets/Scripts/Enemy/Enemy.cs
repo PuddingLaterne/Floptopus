@@ -4,19 +4,23 @@ using System.Collections;
 public class Enemy : MonoBehaviour 
 {
     public Transform[] patrolPoints;
-    GameObject playerObject;
+    public GameObject playerObject;
+    PlayerHealth player;
     public GameObject collectable;
     float biteOffsetTime = 0.5f;
     float fallOffsetTime = 1.0f;
-    Player player;
     NavMeshAgent nav;
     Animator anim;
     Transform target;
     int targetIndex;
     bool playerVisible;
     bool alive;
+    bool fallen = false;
+    bool confused = false;
     float lastBite = 0;
     float lastFall = 0;
+    float confusedTime;
+
     int health = 100;
 
     public float fieldOfView = 45;
@@ -26,8 +30,7 @@ public class Enemy : MonoBehaviour
     {
         alive = true;
         playerVisible = false;
-        playerObject = GameObject.FindGameObjectWithTag("Player");
-        player = playerObject.GetComponent<Player>();
+        player = PlayerHealth.instance;
         targetIndex = 0;
         anim = GetComponentInChildren<Animator>();
         nav = GetComponent<NavMeshAgent>();
@@ -40,8 +43,17 @@ public class Enemy : MonoBehaviour
             return;
         lastBite += Time.deltaTime;
         lastFall += Time.deltaTime;
-        if (lastFall >= fallOffsetTime)
+        confusedTime += Time.deltaTime;
+        if (lastFall >= fallOffsetTime && fallen)
+        {
+            fallen = false;
             nav.Resume();
+        }
+        if (confusedTime >= 2f && confused)
+        {
+            confused = false;
+            nav.Resume();
+        }
         if (playerVisible)
         {
             nav.SetDestination(playerObject.transform.position);
@@ -49,8 +61,11 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            nav.SetDestination(patrolPoints[targetIndex].position);
-            nav.speed = 5;
+            if (!confused)
+            {
+                nav.SetDestination(patrolPoints[targetIndex].position);
+                nav.speed = 5;
+            }
         }
 	    if (!nav.pathPending)
          {
@@ -71,7 +86,7 @@ public class Enemy : MonoBehaviour
         if (lastBite >= biteOffsetTime)
         {
             anim.SetTrigger("bite");
-            player.health.TakeDamage(20);
+            player.TakeDamage(20);
             lastBite = 0;
         }
     }
@@ -98,7 +113,7 @@ public class Enemy : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, playerObject.transform.position + Vector3.up - transform.position, out hit, Vector3.Distance(transform.position, player.transform.position)))
+            if (Physics.Raycast(transform.position, playerObject.transform.position + Vector3.up - transform.position, out hit, Vector3.Distance(transform.position, playerObject.transform.position) - 5))
                 SetPlayerVisible(false);
             else
             {
@@ -120,6 +135,7 @@ public class Enemy : MonoBehaviour
     {
         if (lastFall >= fallOffsetTime)
         {
+            fallen = true;
             nav.Stop();
             health -= 50;
             anim.SetTrigger("fall");
@@ -150,7 +166,15 @@ public class Enemy : MonoBehaviour
     void SetPlayerVisible(bool visible)
     {
         if (playerVisible && !visible) //Player was visible before
+        {
+            nav.Stop();
             anim.SetTrigger("confused");
+            confused = true;
+            confusedTime = 0.0f;
+        }
+        if (!playerVisible && visible) //Player was invisible before
+            anim.SetTrigger("chase");
+        anim.SetBool("chasing", visible);
         playerVisible = visible;
     }
 }

@@ -7,7 +7,7 @@ public class StickySurface : MonoBehaviour
 
 	void Start () 
 	{
-		player = GameObject.FindGameObjectWithTag ("Player").GetComponent<PlayerMovement> ();
+		player = PlayerMovement.instance;
 	}
 
 	void OnTriggerEnter(Collider other)

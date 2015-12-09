@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ef18531bf3de0f8419c8def9fcd5df48
-timeCreated: 1448359026
+timeCreated: 1449589460
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -130,13 +130,17 @@ ModelImporter:
     400120: Upper_Lip
     400122: Upper_Lip_end
     4300000: Floptopus
-    7400000: idle
-    7400002: Armature|idle.001
-    7400004: Armature|stick
-    7400006: stick
-    7400008: Armature|stick.003
-    7400010: walking
-    7400012: Floptopus|stick
+    7400000: bounce
+    7400002: crash
+    7400004: dash
+    7400006: edge
+    7400008: fall
+    7400010: hurt
+    7400012: idle
+    7400014: jump
+    7400016: stick
+    7400018: walking
+    7400020: Floptopus|bounce
     9500000: //RootNode
     13700000: Floptopus
   materials:
@@ -159,6 +163,906 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations:
+    - serializedVersion: 16
+      name: bounce
+      takeName: Armature|bounce
+      firstFrame: 0
+      lastFrame: 11
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Head
+        weight: 1
+      - path: Armature/Root/Head/Face
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_L/Eyeball_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_R/Eyeball_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_L/Lower_Eyelid_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_R/Lower_Eyelid_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Lower_Lip
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Lower_Lip/Lower_Lip_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_L/Mouth_Corner_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_R/Mouth_Corner_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Upper_Lip
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Upper_Lip/Upper_Lip_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_L/Upper_Eyelid_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_R/Upper_Eyelid_R_end
+        weight: 1
+      - path: Armature/Root/Head/Occiput
+        weight: 1
+      - path: Armature/Root/Head/Occiput/Headsack
+        weight: 1
+      - path: Armature/Root/Head/Occiput/Headsack/Headsack_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L/Tentacle_End_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L/Tentacle_End_1_L/Tentacle_End_1_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R/Tentacle_End_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R/Tentacle_End_1_R/Tentacle_End_1_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L/Tentacle_End_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L/Tentacle_End_2_L/Tentacle_End_2_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R/Tentacle_End_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R/Tentacle_End_2_R/Tentacle_End_2_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L/Tentacle_End_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L/Tentacle_End_3_L/Tentacle_End_3_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R/Tentacle_End_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R/Tentacle_End_3_R/Tentacle_End_3_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L/Tentacle_End_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L/Tentacle_End_4_L/Tentacle_End_4_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R/Tentacle_End_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R/Tentacle_End_4_R/Tentacle_End_4_R_end
+        weight: 1
+      - path: Floptopus
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: crash
+      takeName: Armature|crash
+      firstFrame: 0
+      lastFrame: 6
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Head
+        weight: 1
+      - path: Armature/Root/Head/Face
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_L/Eyeball_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_R/Eyeball_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_L/Lower_Eyelid_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_R/Lower_Eyelid_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Lower_Lip
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Lower_Lip/Lower_Lip_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_L/Mouth_Corner_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_R/Mouth_Corner_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Upper_Lip
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Upper_Lip/Upper_Lip_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_L/Upper_Eyelid_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_R/Upper_Eyelid_R_end
+        weight: 1
+      - path: Armature/Root/Head/Occiput
+        weight: 1
+      - path: Armature/Root/Head/Occiput/Headsack
+        weight: 1
+      - path: Armature/Root/Head/Occiput/Headsack/Headsack_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L/Tentacle_End_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L/Tentacle_End_1_L/Tentacle_End_1_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R/Tentacle_End_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R/Tentacle_End_1_R/Tentacle_End_1_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L/Tentacle_End_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L/Tentacle_End_2_L/Tentacle_End_2_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R/Tentacle_End_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R/Tentacle_End_2_R/Tentacle_End_2_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L/Tentacle_End_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L/Tentacle_End_3_L/Tentacle_End_3_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R/Tentacle_End_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R/Tentacle_End_3_R/Tentacle_End_3_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L/Tentacle_End_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L/Tentacle_End_4_L/Tentacle_End_4_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R/Tentacle_End_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R/Tentacle_End_4_R/Tentacle_End_4_R_end
+        weight: 1
+      - path: Floptopus
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: dash
+      takeName: Armature|dash
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Head
+        weight: 1
+      - path: Armature/Root/Head/Face
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_L/Eyeball_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_R/Eyeball_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_L/Lower_Eyelid_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_R/Lower_Eyelid_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Lower_Lip
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Lower_Lip/Lower_Lip_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_L/Mouth_Corner_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_R/Mouth_Corner_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Upper_Lip
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Upper_Lip/Upper_Lip_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_L/Upper_Eyelid_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_R/Upper_Eyelid_R_end
+        weight: 1
+      - path: Armature/Root/Head/Occiput
+        weight: 1
+      - path: Armature/Root/Head/Occiput/Headsack
+        weight: 1
+      - path: Armature/Root/Head/Occiput/Headsack/Headsack_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L/Tentacle_End_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L/Tentacle_End_1_L/Tentacle_End_1_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R/Tentacle_End_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R/Tentacle_End_1_R/Tentacle_End_1_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L/Tentacle_End_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L/Tentacle_End_2_L/Tentacle_End_2_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R/Tentacle_End_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R/Tentacle_End_2_R/Tentacle_End_2_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L/Tentacle_End_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L/Tentacle_End_3_L/Tentacle_End_3_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R/Tentacle_End_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R/Tentacle_End_3_R/Tentacle_End_3_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L/Tentacle_End_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L/Tentacle_End_4_L/Tentacle_End_4_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R/Tentacle_End_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R/Tentacle_End_4_R/Tentacle_End_4_R_end
+        weight: 1
+      - path: Floptopus
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: edge
+      takeName: Armature|edge
+      firstFrame: 0
+      lastFrame: 29
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Head
+        weight: 1
+      - path: Armature/Root/Head/Face
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_L/Eyeball_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_R/Eyeball_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_L/Lower_Eyelid_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_R/Lower_Eyelid_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Lower_Lip
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Lower_Lip/Lower_Lip_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_L/Mouth_Corner_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_R/Mouth_Corner_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Upper_Lip
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Upper_Lip/Upper_Lip_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_L/Upper_Eyelid_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_R/Upper_Eyelid_R_end
+        weight: 1
+      - path: Armature/Root/Head/Occiput
+        weight: 1
+      - path: Armature/Root/Head/Occiput/Headsack
+        weight: 1
+      - path: Armature/Root/Head/Occiput/Headsack/Headsack_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L/Tentacle_End_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L/Tentacle_End_1_L/Tentacle_End_1_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R/Tentacle_End_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R/Tentacle_End_1_R/Tentacle_End_1_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L/Tentacle_End_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L/Tentacle_End_2_L/Tentacle_End_2_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R/Tentacle_End_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R/Tentacle_End_2_R/Tentacle_End_2_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L/Tentacle_End_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L/Tentacle_End_3_L/Tentacle_End_3_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R/Tentacle_End_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R/Tentacle_End_3_R/Tentacle_End_3_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L/Tentacle_End_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L/Tentacle_End_4_L/Tentacle_End_4_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R/Tentacle_End_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R/Tentacle_End_4_R/Tentacle_End_4_R_end
+        weight: 1
+      - path: Floptopus
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: fall
+      takeName: Armature|fall
+      firstFrame: 0
+      lastFrame: 11
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Head
+        weight: 1
+      - path: Armature/Root/Head/Face
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_L/Eyeball_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_R/Eyeball_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_L/Lower_Eyelid_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_R/Lower_Eyelid_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Lower_Lip
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Lower_Lip/Lower_Lip_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_L/Mouth_Corner_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_R/Mouth_Corner_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Upper_Lip
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Upper_Lip/Upper_Lip_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_L/Upper_Eyelid_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_R/Upper_Eyelid_R_end
+        weight: 1
+      - path: Armature/Root/Head/Occiput
+        weight: 1
+      - path: Armature/Root/Head/Occiput/Headsack
+        weight: 1
+      - path: Armature/Root/Head/Occiput/Headsack/Headsack_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L/Tentacle_End_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L/Tentacle_End_1_L/Tentacle_End_1_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R/Tentacle_End_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R/Tentacle_End_1_R/Tentacle_End_1_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L/Tentacle_End_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L/Tentacle_End_2_L/Tentacle_End_2_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R/Tentacle_End_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R/Tentacle_End_2_R/Tentacle_End_2_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L/Tentacle_End_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L/Tentacle_End_3_L/Tentacle_End_3_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R/Tentacle_End_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R/Tentacle_End_3_R/Tentacle_End_3_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L/Tentacle_End_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L/Tentacle_End_4_L/Tentacle_End_4_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R/Tentacle_End_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R/Tentacle_End_4_R/Tentacle_End_4_R_end
+        weight: 1
+      - path: Floptopus
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: hurt
+      takeName: Armature|hurt
+      firstFrame: 0
+      lastFrame: 11
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Head
+        weight: 1
+      - path: Armature/Root/Head/Face
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_L/Eyeball_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_R/Eyeball_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_L/Lower_Eyelid_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_R/Lower_Eyelid_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Lower_Lip
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Lower_Lip/Lower_Lip_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_L/Mouth_Corner_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_R/Mouth_Corner_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Upper_Lip
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Upper_Lip/Upper_Lip_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_L/Upper_Eyelid_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_R/Upper_Eyelid_R_end
+        weight: 1
+      - path: Armature/Root/Head/Occiput
+        weight: 1
+      - path: Armature/Root/Head/Occiput/Headsack
+        weight: 1
+      - path: Armature/Root/Head/Occiput/Headsack/Headsack_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L/Tentacle_End_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L/Tentacle_End_1_L/Tentacle_End_1_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R/Tentacle_End_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R/Tentacle_End_1_R/Tentacle_End_1_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L/Tentacle_End_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L/Tentacle_End_2_L/Tentacle_End_2_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R/Tentacle_End_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R/Tentacle_End_2_R/Tentacle_End_2_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L/Tentacle_End_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L/Tentacle_End_3_L/Tentacle_End_3_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R/Tentacle_End_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R/Tentacle_End_3_R/Tentacle_End_3_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L/Tentacle_End_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L/Tentacle_End_4_L/Tentacle_End_4_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R/Tentacle_End_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R/Tentacle_End_4_R/Tentacle_End_4_R_end
+        weight: 1
+      - path: Floptopus
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     - serializedVersion: 16
       name: idle
       takeName: Armature|idle
@@ -310,8 +1214,158 @@ ModelImporter:
       maskType: 0
       maskSource: {instanceID: 0}
     - serializedVersion: 16
+      name: jump
+      takeName: Armature|jump
+      firstFrame: 0
+      lastFrame: 12
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/Root
+        weight: 1
+      - path: Armature/Root/Head
+        weight: 1
+      - path: Armature/Root/Head/Face
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_L/Eyeball_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Eyeball_R/Eyeball_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_L/Lower_Eyelid_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Lower_Eyelid_R/Lower_Eyelid_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Lower_Lip
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Lower_Lip/Lower_Lip_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_L/Mouth_Corner_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Mouth_Corner_R/Mouth_Corner_R_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Upper_Lip
+        weight: 1
+      - path: Armature/Root/Head/Face/Mouth/Upper_Lip/Upper_Lip_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_L
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_L/Upper_Eyelid_L_end
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_R
+        weight: 1
+      - path: Armature/Root/Head/Face/Upper_Eyelid_R/Upper_Eyelid_R_end
+        weight: 1
+      - path: Armature/Root/Head/Occiput
+        weight: 1
+      - path: Armature/Root/Head/Occiput/Headsack
+        weight: 1
+      - path: Armature/Root/Head/Occiput/Headsack/Headsack_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L/Tentacle_End_1_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_L/Tentacle_Middle_1_L/Tentacle_End_1_L/Tentacle_End_1_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R/Tentacle_End_1_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_1_R/Tentacle_Middle_1_R/Tentacle_End_1_R/Tentacle_End_1_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L/Tentacle_End_2_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_L/Tentacle_Middle_2_L/Tentacle_End_2_L/Tentacle_End_2_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R/Tentacle_End_2_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_2_R/Tentacle_Middle_2_R/Tentacle_End_2_R/Tentacle_End_2_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L/Tentacle_End_3_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_L/Tentacle_Middle_3_L/Tentacle_End_3_L/Tentacle_End_3_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R/Tentacle_End_3_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_3_R/Tentacle_Middle_3_R/Tentacle_End_3_R/Tentacle_End_3_R_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L/Tentacle_End_4_L
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_L/Tentacle_Middle_4_L/Tentacle_End_4_L/Tentacle_End_4_L_end
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R/Tentacle_End_4_R
+        weight: 1
+      - path: Armature/Root/Tentacle_Start_4_R/Tentacle_Middle_4_R/Tentacle_End_4_R/Tentacle_End_4_R_end
+        weight: 1
+      - path: Floptopus
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
       name: stick
-      takeName: Armature|stick.002
+      takeName: Armature|stick
       firstFrame: 0
       lastFrame: 30
       wrapMode: 0
@@ -645,10 +1699,8 @@ ModelImporter:
     legStretch: .0500000007
     feetSpacing: 0
     rootMotionBoneName: 
-    hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
-  humanoidOversampling: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
