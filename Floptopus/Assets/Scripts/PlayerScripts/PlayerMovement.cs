@@ -176,11 +176,13 @@ public class PlayerMovement : MonoBehaviour
                 transform.eulerAngles = new Vector3(Mathf.LerpAngle(transform.eulerAngles.x, 0, Time.deltaTime * 5), transform.eulerAngles.y, transform.eulerAngles.z);
         }
 
-        //if (stuck || onEdge)
-        //{
-            //Vector3 wallDirection = new Vector3(-wallJumpDirection.x, wallJumpDirection.y, -wallJumpDirection.z);
-            //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(wallDirection), Time.deltaTime * 10);
-        //}
+        if (stuck || onEdge)
+        {
+
+            Vector3 wallDirection = new Vector3(-wallJumpDirection.x, 0, -wallJumpDirection.z);
+            Debug.Log(wallDirection);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(wallDirection), Time.deltaTime * 10);
+        }
     }
 
 	void Jump()

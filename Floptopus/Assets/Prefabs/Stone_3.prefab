@@ -10,7 +10,7 @@ GameObject:
   - 4: {fileID: 483222}
   - 33: {fileID: 3346076}
   - 23: {fileID: 2385900}
-  - 65: {fileID: 6519286}
+  - 64: {fileID: 6404106}
   m_Layer: 0
   m_Name: Stone_3
   m_TagString: Untagged
@@ -25,7 +25,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102194}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: 0, y: .5, z: 0}
+  m_LocalPosition: {x: 44.423912, y: -2.95426726, z: -31.2000008}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -61,8 +61,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 102194}
   m_Mesh: {fileID: 4300004, guid: 95ffa41e498712a4494542a37b2a062f, type: 3}
---- !u!65 &6519286
-BoxCollider:
+--- !u!64 &6404106
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -71,8 +71,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.90999985, y: 5.34000015, z: 9.45133209}
-  m_Center: {x: -.401203156, y: .359275222, z: 4.68955946}
+  m_Convex: 1
+  m_Mesh: {fileID: 4300004, guid: 95ffa41e498712a4494542a37b2a062f, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
