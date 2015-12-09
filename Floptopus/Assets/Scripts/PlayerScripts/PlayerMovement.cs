@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
 
     bool jumping;
 	bool grounded;
+    float airTime;
     bool onEdge = false;
     Edge edgeScript;
 
@@ -67,9 +68,10 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("speed", Mathf.Abs(controller.velocity.x) + Mathf.Abs(controller.velocity.z));
         anim.SetBool("jumping", jumping);
         LookInDirection();
-        grounded = controller.isGrounded;
+        grounded = IsGrounded();
         if (grounded)
-            anim.SetTrigger("grounded");
+            anim.SetTrigger("ground");
+        anim.SetBool("grounded", grounded);
 	}
 
 	void FixedUpdate ()
@@ -218,6 +220,7 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpDirection = Vector3.zero;
             edgeScript.Release();
+            anim.SetTrigger("stick");
         }
         dashPressed = false;
 		dashHeldTime = 0.0f;
@@ -233,6 +236,8 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("sticking", stick);
             if (stick)
                 anim.SetTrigger("stick");
+            else
+                anim.ResetTrigger("stick");
         }
         stuck = stick;
 		if (stick)
@@ -248,6 +253,8 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("hanging", hold);
             if (hold)
                 anim.SetTrigger("hang");
+            else
+                anim.ResetTrigger("hang");
             anim.ResetTrigger("stick");
         }
 
@@ -268,8 +275,14 @@ public class PlayerMovement : MonoBehaviour
 
     public void SetWallJumpDirection(Vector3 direction) { wallJumpDirection = direction; }
 
-    public void SetGrounded(bool grounded)
+    bool IsGrounded()
     {
-        this.grounded = grounded;
+        airTime += Time.deltaTime;
+        if (controller.isGrounded)
+            airTime = 0.0f;
+        if (airTime >= 0.1f)
+            return false;
+        else
+            return true;
     }
 }
