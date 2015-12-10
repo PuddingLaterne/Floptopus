@@ -18,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     CharacterController controller;
     Vector3 fallOrigin;
     Vector3 edge;
+    Vector3 groundNormal;
 	float dashHeldTime;
     float tilt;
     float jumpStrength;
@@ -146,6 +147,7 @@ public class PlayerMovement : MonoBehaviour
         {
             falltriggered = true;
             anim.SetTrigger("fall");
+            anim.ResetTrigger("jump");
         }
 
         if (stuck)
@@ -172,10 +174,15 @@ public class PlayerMovement : MonoBehaviour
 	    Vector3 view = new Vector3(direction.x, 0, direction.z);
         if (!stuck)
         {
+            //if (grounded)
+            //{
+                //transform.rotation = new Vector3(-Vector3.Angle(Vector3.up, groundNormal), transform.rotation.y, transform.rotation.z);
+                //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(transform.forward, groundNormal), Time.deltaTime * 10);
+            //}
+
             if (view != Vector3.zero && !stuck)
                 transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(view), Time.deltaTime * 10);
-            if (!jumping && grounded)
-                transform.eulerAngles = new Vector3(Mathf.LerpAngle(transform.eulerAngles.x, 0, Time.deltaTime * 5), transform.eulerAngles.y, transform.eulerAngles.z);
+         
         }
 
         if (stuck || onEdge)
@@ -220,13 +227,14 @@ public class PlayerMovement : MonoBehaviour
         {
             jumpDirection = Vector3.zero;
             edgeScript.Release();
-            anim.SetTrigger("stick");
+
         }
+        else
+            anim.SetTrigger("dash");
         dashPressed = false;
 		dashHeldTime = 0.0f;
 		timeSinceJump = 0.0f;
         jumping = true;
-        anim.SetTrigger("dash");
 	}
 
 	public void StickToSurface(bool stick)
@@ -235,7 +243,10 @@ public class PlayerMovement : MonoBehaviour
         {
             anim.SetBool("sticking", stick);
             if (stick)
-                anim.SetTrigger("stick");
+            {
+                if(!anim.GetBool("hanging"))
+                    anim.SetTrigger("stick");
+            }
             else
                 anim.ResetTrigger("stick");
         }
@@ -283,6 +294,18 @@ public class PlayerMovement : MonoBehaviour
         if (airTime >= 0.1f)
             return false;
         else
+        {
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, -Vector3.up, out hit))
+            {
+                groundNormal = hit.normal;
+            }
+            else
+            {
+                Debug.Log("meh");
+                groundNormal = Vector3.up;
+            }
             return true;
+        }
     }
 }
