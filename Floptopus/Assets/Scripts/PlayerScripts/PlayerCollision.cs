@@ -4,6 +4,9 @@ using System.Collections;
 public class PlayerCollision : MonoBehaviour 
 {
     PlayerMovement player;
+
+    PlayerInk ink;
+    PlayerHealth health;
     public static PlayerCollision instance;
 
     void Awake()
@@ -14,6 +17,8 @@ public class PlayerCollision : MonoBehaviour
 	void Start () 
     {
 	    player = PlayerMovement.instance;
+        ink = PlayerInk.instance;
+        health = PlayerHealth.instance;
 	}
 	
     void OnControllerColliderHit(ControllerColliderHit hit)
@@ -27,12 +32,18 @@ public class PlayerCollision : MonoBehaviour
                 hit.gameObject.GetComponent<Collectable>().PlayerContact();
                 break;
             case "Enemy":
-                if (player.IsJumping())
+                if (player.IsDashing())
                     hit.gameObject.GetComponent<Enemy>().JumpedAt(-hit.normal);
                 break;
             case "LooseObject":
-                if (player.IsJumping())
+                if (player.IsDashing())
                     hit.gameObject.GetComponent<LooseObject>().FallOver(-hit.normal);
+                break;
+            case "Ink":
+                hit.gameObject.GetComponentInParent<Ink>().Collect(this.gameObject);
+                break;
+            case "Health":
+                hit.gameObject.GetComponentInParent<Health>().Collect(this.gameObject);
                 break;
         }
     }

@@ -4,6 +4,8 @@ using System.Collections;
 public class PlayerMovement : MonoBehaviour
 {
     public static PlayerMovement instance;
+    public GameObject inkObject;
+    ParticleSystem ink;
 
     public float speed = 5;
     public float dashSpeedMultiplier = 1.5f;
@@ -29,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     bool jumping;
 	bool grounded;
     float airTime;
+    float groundTime;
     bool onEdge = false;
     Edge edgeScript;
 
@@ -36,11 +39,13 @@ public class PlayerMovement : MonoBehaviour
 	float stickiness;
     bool stuck;
     bool falling = false;
+    bool dashing = false;
     float fallingTime = 0.0f;
     bool falltriggered;
 
     Animator anim;
     PlayerHealth health;
+    PlayerInk playerInk;
 
     void Awake()
     {
@@ -49,6 +54,8 @@ public class PlayerMovement : MonoBehaviour
 
 	void Start ()
     {
+        ink = inkObject.GetComponent<ParticleSystem>();
+        ink.enableEmission = false;
         jumpReleased = true;
         direction = Vector3.zero;
         wallJumpDirection = Vector3.zero;
@@ -57,6 +64,7 @@ public class PlayerMovement : MonoBehaviour
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
         health = PlayerHealth.instance;
+        playerInk = PlayerInk.instance; 
 
         jumping = false;
 		grounded = false;
@@ -70,9 +78,6 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("jumping", jumping);
         LookInDirection();
         grounded = IsGrounded();
-        if (grounded)
-            anim.SetTrigger("ground");
-        anim.SetBool("grounded", grounded);
 	}
 
 	void FixedUpdate ()
@@ -81,92 +86,62 @@ public class PlayerMovement : MonoBehaviour
         Vector3 directionH = new Vector3(Camera.main.transform.right.x, 0, Camera.main.transform.right.z).normalized;
         direction = (directionV * Input.GetAxis("Vertical") + directionH * Input.GetAxis("Horizontal")) * speed;
 
-        if (onEdge)
-        {
-            timeSinceJump = 0;
-            grounded = false;
-        }
-
-        if (onEdge)
-        {
-            direction += new Vector3(edge.x - transform.position.x, 0, edge.z - transform.position.z) ;
-        }
-
-		float gravityInfluence = timeSinceJump;
-		if(timeSinceJump > 1.0f)
-			gravityInfluence = 1.0f;
-		direction -= Vector3.up * gravity * gravityInfluence * Time.deltaTime;
-
-		if (grounded && timeSinceJump > 0.1f) 
-		{
-			jumping = false;
-			timeSinceJump = 0;
-		}
-
-		timeSinceJump += Time.deltaTime;
-
-		if (jumping) 
-			direction += jumpDirection * Time.deltaTime * 100;
-
-        if (Input.GetButton("Shift"))
-        {
-            dashPressed = true;
-            dashHeldTime += Time.deltaTime;
-        }
-
-		if (!Input.GetButton ("Shift") && dashPressed && (grounded || onEdge)) //dash-button released
-			Dash (); 
-
-		if (Input.GetButton ("Jump") && (grounded || stuck) && jumpReleased)
-			Jump ();
-
-        if (jumpPressed && !Input.GetButton("Jump"))
-            jumpReleased = true;
-
+        HangingOnEdge();
+        Gravity();
+        Jumping();
+        HandleInput();
+        
 		direction = new Vector3 (direction.x, direction.y * stickiness, direction.z);
 
         Vector3 oldVelocity = controller.velocity;
 		controller.Move(new Vector3(direction.x * Time.deltaTime, direction.y * Time.deltaTime,  direction.z * Time.deltaTime));
+        Fall(oldVelocity);              
+    }
 
-        if (controller.velocity.y < 0 && oldVelocity.y >= 0)
+    void HandleInput()
+    {
+        if (Input.GetButton("Shift"))
         {
-            falling = true;
-            fallOrigin = transform.position;
-        }
-
-        if (controller.velocity.y == 0 || grounded)
-        {
-            falltriggered = false;
-            falling = false;
-            fallingTime = 0.0f;
-        }
-
-        if (falling)
-            fallingTime =+ Time.deltaTime;
-        if (fallingTime >= 0.01f && !falltriggered && !(stuck || onEdge))
-        {
-            falltriggered = true;
-            anim.SetTrigger("fall");
-            anim.ResetTrigger("jump");
-        }
-
-        if (stuck)
-            fallOrigin = transform.position;
-        if (controller.velocity.y == 0 && oldVelocity.y < 0)
-        {
-            if (Mathf.Abs(fallOrigin.y - transform.position.y) > 20)
+            dashPressed = true;
+            if (onEdge)
             {
-                anim.SetTrigger("crash");
-                health.TakeDamage(50);
+                ReleaseEdge();
             }
-            else
+            if (Input.GetButton("Jump") && !jumping && playerInk.UseInk(20))
             {
-                if(fallingTime >= 0.01f)
-                    anim.SetTrigger("bounce");
+                Dash();
+            }
+
+            if (!jumping && direction.x != 0 && direction.y != 0)
+            {
+                if (playerInk.UseInk(10 * Time.deltaTime))
+                {
+                    Run();
+                }
+                else
+                {
+                    ink.enableEmission = false;
+                }
             }
         }
-        anim.SetBool("falling", falling);
-                
+        else
+        {
+            if (Input.GetButton("Jump") && (grounded || stuck) && jumpReleased)
+            {
+                Jump();
+            }
+        }
+        if (jumpPressed && !Input.GetButton("Jump"))
+        {
+            jumpReleased = true;
+        }
+        if (dashPressed && !Input.GetButton("Shift"))
+        {
+            if (!jumping)
+                ink.enableEmission = false;
+            dashPressed = false;
+        }
+
     }
 
     void LookInDirection()
@@ -174,68 +149,144 @@ public class PlayerMovement : MonoBehaviour
 	    Vector3 view = new Vector3(direction.x, 0, direction.z);
         if (!stuck)
         {
-            //if (grounded)
-            //{
-                //transform.rotation = new Vector3(-Vector3.Angle(Vector3.up, groundNormal), transform.rotation.y, transform.rotation.z);
-                //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(transform.forward, groundNormal), Time.deltaTime * 10);
-            //}
+            Vector3 forward = new Vector3(transform.forward.x, 0, transform.forward.z);
+            Vector3 right = new Vector3(transform.right.x, 0, transform.right.z);
+            float angleX = 90 - Vector3.Angle(groundNormal, forward);
+            float angleZ = -(90 - Vector3.Angle(groundNormal, right));
 
             if (view != Vector3.zero && !stuck)
+            {
                 transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(view), Time.deltaTime * 10);
-         
-        }
+            }
 
+            if (grounded)
+            {
+                transform.localEulerAngles = new Vector3(Mathf.LerpAngle(transform.localEulerAngles.x, angleX, Time.deltaTime * 10),
+                    transform.localEulerAngles.y, Mathf.LerpAngle(transform.localEulerAngles.z, angleZ, Time.deltaTime * 10));
+            }
+            else
+            {
+                transform.localEulerAngles = new Vector3(Mathf.LerpAngle(transform.localEulerAngles.x, 0, Time.deltaTime * 5),
+                    transform.localEulerAngles.y, Mathf.LerpAngle(transform.localEulerAngles.z, 0, Time.deltaTime * 5));
+            }       
+        }
         if (stuck || onEdge)
         {
-
             Vector3 wallDirection = new Vector3(-wallJumpDirection.x, 0, -wallJumpDirection.z);
-            Debug.Log(wallDirection);
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(wallDirection), Time.deltaTime * 10);
+            if(wallJumpDirection != Vector3.zero)
+                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(wallDirection), Time.deltaTime * 10);
         }
     }
 
-	void Jump()
+	void Jump(float strength = 1f)
 	{
         jumpPressed = true;
         jumpReleased = false;
-		jumpDirection = Vector3.up * 25;
+		jumpDirection = Vector3.up * 25 * strength;
         if (stuck)
+        {
             jumpDirection = wallJumpDirection * 20 + Vector3.up * 20;
-        if(onEdge)
+        }
+        if (onEdge)
+        {
             jumpDirection = Vector3.up * 25 - wallJumpDirection * 5;
+        }
 		timeSinceJump = 0.0f;
 		jumping = true;
         anim.SetTrigger("jump");
+        anim.ResetTrigger("stick");
+        anim.SetBool("sticking", false);
 	}
+
+    void Jumping()
+    {
+
+        if (grounded && timeSinceJump > 0.1f)
+        {
+            dashing = false;
+            jumping = false;
+            timeSinceJump = 0;
+        }
+        timeSinceJump += Time.deltaTime;
+        if (jumping)
+        {
+            direction += jumpDirection * Time.deltaTime * 100;
+        }
+    }
+
+    void Run()
+    {
+        ink.enableEmission = true;
+        direction = direction * 2.5f;
+    }
 
 	void Dash()
 	{
-        if(dashHeldTime >= jumpHoldThreshold)
-        {
-            tilt = 2;
-            jumpStrength = 30;
-        }
-        else
-        {
-            tilt = 0.75f;
-            jumpStrength = 25;
-        }
+        tilt = 2;
+        jumpStrength = 30;
         jumpDirection = transform.forward + Vector3.up * tilt;
         jumpDirection.Normalize();
         jumpDirection = jumpDirection * jumpStrength;
-        if (onEdge)
-        {
-            jumpDirection = Vector3.zero;
-            edgeScript.Release();
 
-        }
-        else
+        if(!onEdge && !stuck)
+        {
+            groundTime = 0.0f;
+            ink.enableEmission = true;
+            Invoke("StopInk", 0.5f);
             anim.SetTrigger("dash");
-        dashPressed = false;
-		dashHeldTime = 0.0f;
+            anim.ResetTrigger("stick");
+        }
 		timeSinceJump = 0.0f;
         jumping = true;
+        dashing = true;
 	}
+
+    void Fall(Vector3 oldVelocity)
+    {
+        if (controller.velocity.y < 0 && oldVelocity.y >= 0)
+        {
+            falling = true;
+            fallOrigin = transform.position;
+        }
+        if (controller.velocity.y == 0 || grounded)
+        {
+            falltriggered = false;
+            falling = false;
+            fallingTime = 0.0f;
+        }
+        if (falling)
+            fallingTime = +Time.deltaTime;
+        if (fallingTime >= 0.01f && !falltriggered && !(stuck || onEdge))
+        {
+            falltriggered = true;
+            anim.SetTrigger("fall");
+            anim.ResetTrigger("jump");
+        }
+        if (controller.velocity.y == 0 && oldVelocity.y < 0)
+        {
+            if (Mathf.Abs(fallOrigin.y - transform.position.y) > 20 && !stuck)
+            {
+                anim.SetTrigger("crash");
+                health.TakeDamage(50);
+            }
+            else
+            {
+                if (fallingTime >= 0.01f)
+                    anim.SetTrigger("bounce");
+            }
+        }
+        anim.SetBool("falling", falling);
+    }
+
+    void Gravity()
+    {
+        float gravityInfluence = timeSinceJump;
+        if (timeSinceJump > 1.0f)
+        {
+            gravityInfluence = 1.0f;
+        }
+        direction -= Vector3.up * gravity * gravityInfluence * Time.deltaTime;
+    }
 
 	public void StickToSurface(bool stick)
 	{
@@ -244,6 +295,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("sticking", stick);
             if (stick)
             {
+                jumpDirection = Vector3.zero;
                 if(!anim.GetBool("hanging"))
                     anim.SetTrigger("stick");
             }
@@ -282,28 +334,62 @@ public class PlayerMovement : MonoBehaviour
         onEdge = hold;
     }
 
-    public bool IsJumping() { return jumping;}
+    void HangingOnEdge()
+    {
+         if (onEdge)
+        {
+            timeSinceJump = 0;
+            grounded = false;
+            direction += new Vector3(edge.x - transform.position.x, 0, edge.z - transform.position.z);
+            if (edge.y - transform.position.y > 0.5f)
+            {
+                direction.y += Mathf.Lerp(direction.y, edge.y, Time.deltaTime * 10);
+            }
+        }
+    }
+
+    void ReleaseEdge()
+    {
+        jumpDirection = Vector3.zero;
+        edgeScript.Release();
+    }
+
+    public bool IsDashing() { return dashing;}
 
     public void SetWallJumpDirection(Vector3 direction) { wallJumpDirection = direction; }
 
+    void StopInk()
+    {
+        ink.enableEmission = false;
+    }
+
     bool IsGrounded()
     {
+        if (grounded)
+            anim.SetTrigger("ground");
+        anim.SetBool("grounded", grounded);
         airTime += Time.deltaTime;
         if (controller.isGrounded)
             airTime = 0.0f;
         if (airTime >= 0.1f)
+        {
+            groundTime = 0.0f;
             return false;
+        }
         else
         {
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, -Vector3.up, out hit))
+            groundTime += Time.deltaTime;
+            if (groundTime >= 0.1f)
             {
-                groundNormal = hit.normal;
-            }
-            else
-            {
-                Debug.Log("meh");
-                groundNormal = Vector3.up;
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, -Vector3.up, out hit))
+                {
+                    groundNormal = hit.normal;
+                }
+                else
+                {
+                    groundNormal = Vector3.up;
+                }
             }
             return true;
         }

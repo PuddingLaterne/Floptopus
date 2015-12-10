@@ -10,8 +10,6 @@ public class Edge : MonoBehaviour
 	void Start () 
     {
         player = PlayerMovement.instance;
-        if (player == null)
-            Debug.Log("WHY");
         mainCollider = transform.parent.gameObject.GetComponent<BoxCollider>();
         collider = GetComponent<Collider>();
 	}

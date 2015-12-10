@@ -20,6 +20,13 @@ public class PlayerHealth : MonoBehaviour
         healthSlider = GameObject.FindGameObjectWithTag("PlayerHealthUI").GetComponent<Slider>();
 	}
 
+    public void CollectHealth(float value)
+    {
+        currentHealth += value;
+        if (currentHealth > maxHealth)
+            currentHealth = maxHealth;
+    }
+
     public void TakeDamage(float damage)
     {
         currentHealth -= damage;
@@ -29,6 +36,6 @@ public class PlayerHealth : MonoBehaviour
 
 	void Update () 
     {
-        healthSlider.value = currentHealth / maxHealth;
+        healthSlider.value = Mathf.Lerp(healthSlider.value, currentHealth / maxHealth, Time.deltaTime * 10);
 	}
 }
