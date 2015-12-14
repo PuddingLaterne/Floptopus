@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Enemy\Enemy.cs" />
      <Compile Include="Assets\Scripts\Environment\Edge.cs" />
      <Compile Include="Assets\Scripts\Environment\LooseObject.cs" />
+     <Compile Include="Assets\Scripts\Environment\Mushroom.cs" />
      <Compile Include="Assets\Scripts\Environment\StickySurface.cs" />
      <Compile Include="Assets\Scripts\LevelBoundaries.cs" />
      <Compile Include="Assets\Scripts\Menu\ButtonPress.cs" />

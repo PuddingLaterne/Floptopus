@@ -17,11 +17,11 @@ public class Enemy : MonoBehaviour
     bool alive;
     bool fallen = false;
     bool confused = false;
+    bool collectableDropped = false;
     float lastBite = 0;
     float lastFall = 0;
     float confusedTime;
 
-    int health = 100;
 
     public float fieldOfView = 45;
     public float viewRange = 100;
@@ -86,9 +86,22 @@ public class Enemy : MonoBehaviour
         if (lastBite >= biteOffsetTime)
         {
             anim.SetTrigger("bite");
-            player.TakeDamage(20);
+            Invoke("Crunch", 0.15f);
             lastBite = 0;
         }
+    }
+
+    void Crunch()
+    {
+        if (Vector3.Distance(transform.position, player.transform.position) < 7.5f && Mathf.Abs(AngleToPlayer()) < 60 )
+        {
+            player.TakeDamage(20);
+        }
+    }
+
+    float AngleToPlayer()
+    {
+        return Vector3.Angle(player.transform.position - transform.position, transform.forward);
     }
 
     void ApproachNextPatrolPoint()
@@ -137,30 +150,19 @@ public class Enemy : MonoBehaviour
         {
             fallen = true;
             nav.Stop();
-            health -= 50;
             anim.SetTrigger("fall");
             lastFall = 0;
-            if (health <= 0)
+            if (!collectableDropped)
             {
-                alive = false;
-                nav.Stop();
-                anim.SetBool("dead", true);
-                GetComponent<CapsuleCollider>().enabled = false;
-                Invoke("SpawnCollectable", 2);
-                Invoke("Die", 3);
+                collectableDropped = true;
+                Invoke("SpawnCollectable", 0.1f);
             }
         }
     }
 
     void SpawnCollectable()
     { 
-        GameObject.Instantiate(collectable, transform.position + transform.forward * 10 + Vector3.up * 3, Quaternion.Euler(Vector3.zero));
-    }
-
-    void Die()
-    {
-        anim.SetBool("gone", true);
-        GameObject.Destroy(this, 2);
+        GameObject.Instantiate(collectable, transform.position + transform.forward * -5 + Vector3.up * 3, Quaternion.Euler(Vector3.zero));
     }
 
     void SetPlayerVisible(bool visible)

@@ -6,6 +6,6 @@ public class LevelBoundaries : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("Player"))
-            Application.LoadLevel(0);
+            Application.LoadLevel(1);
     }
 }

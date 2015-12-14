@@ -32,8 +32,11 @@ public class PlayerCollision : MonoBehaviour
                 hit.gameObject.GetComponent<Collectable>().PlayerContact();
                 break;
             case "Enemy":
+                player.Turn();
                 if (player.IsDashing())
+                {
                     hit.gameObject.GetComponent<Enemy>().JumpedAt(-hit.normal);
+                }
                 break;
             case "LooseObject":
                 if (player.IsDashing())

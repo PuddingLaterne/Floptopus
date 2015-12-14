@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
     public static PlayerMovement instance;
     public GameObject inkObject;
     ParticleSystem ink;
+    public float fallHeight = 30;
 
     public float speed = 5;
     public float dashSpeedMultiplier = 1.5f;
@@ -88,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
 
         HangingOnEdge();
         Gravity();
-        Jumping();
+        HandleJump();
         HandleInput();
         
 		direction = new Vector3 (direction.x, direction.y * stickiness, direction.z);
@@ -198,7 +199,7 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("sticking", false);
 	}
 
-    void Jumping()
+    void HandleJump()
     {
 
         if (grounded && timeSinceJump > 0.1f)
@@ -264,7 +265,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (controller.velocity.y == 0 && oldVelocity.y < 0)
         {
-            if (Mathf.Abs(fallOrigin.y - transform.position.y) > 20 && !stuck)
+            if (Mathf.Abs(fallOrigin.y - transform.position.y) > fallHeight && !stuck)
             {
                 anim.SetTrigger("crash");
                 health.TakeDamage(50);
@@ -357,6 +358,16 @@ public class PlayerMovement : MonoBehaviour
     public bool IsDashing() { return dashing;}
 
     public void SetWallJumpDirection(Vector3 direction) { wallJumpDirection = direction; }
+
+    public void Turn()
+    {
+        jumpDirection = new Vector3(-jumpDirection.x, jumpDirection.y, -jumpDirection.z);
+    }
+
+    public void Bounce()
+    {
+        Jump(1.5f);
+    }
 
     void StopInk()
     {
