@@ -1,0 +1,35 @@
+Initialize engine version: 5.2.1f1 (44735ea161b3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 980 (ID=0x13c0)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\floptopus_alpha_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\floptopus_alpha_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\floptopus_alpha_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\floptopus_alpha_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\floptopus_alpha_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\floptopus_alpha_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.066 seconds
+desktop: 1920x1080 60Hz; virtual: 3200x1080 at -1280,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\floptopus_alpha_Data\Managed\System.dll (this message is harmless)
+Setting up 3 worker threads for Enlighten.
+  Thread -> id: 1a94 -> priority: 1 
+  Thread -> id: 1758 -> priority: 1 
+  Thread -> id: 2028 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.145814 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 3424.
+Total: 0.611020 ms (FindLiveObjects: 0.213298 ms CreateObjectMapping: 0.070478 ms MarkObjects: 0.310788 ms  DeleteObjects: 0.015523 ms)
+

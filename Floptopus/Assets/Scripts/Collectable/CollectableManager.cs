@@ -22,6 +22,8 @@ public class CollectableManager : MonoBehaviour
             cUI.UpdateCollectableCount(currentAmountCollectables, totalAmountCollectables);
         }
         if (currentAmountCollectables == totalAmountCollectables)
-            Application.LoadLevel(0);
+        {
+            Application.LoadLevel(2);
+        }
     }
 }

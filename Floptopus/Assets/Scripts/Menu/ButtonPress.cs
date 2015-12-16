@@ -13,6 +13,11 @@ public class ButtonPress : MonoBehaviour
         StartCoroutine(LoadScene(1, 0.2f));
     }
 
+    public void BackToMenu()
+    {
+        StartCoroutine(LoadScene(0, 0.2f));
+    }
+
     IEnumerator LoadScene(int index, float delay)
     {
         yield return new WaitForSeconds(delay);

@@ -39,8 +39,7 @@ public class PlayerCollision : MonoBehaviour
                 }
                 break;
             case "LooseObject":
-                if (player.IsDashing())
-                    hit.gameObject.GetComponent<LooseObject>().FallOver(-hit.normal);
+                hit.gameObject.GetComponent<LooseObject>().FallOver(-hit.normal);
                 break;
             case "Ink":
                 hit.gameObject.GetComponentInParent<Ink>().Collect(this.gameObject);

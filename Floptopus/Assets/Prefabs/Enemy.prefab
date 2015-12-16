@@ -933,7 +933,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -67.4566193, y: .454267263, z: 8.66676044}
+  m_LocalPosition: {x: -51.5999985, y: 12.6999998, z: -59.7999992}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 403096}
@@ -1240,6 +1240,8 @@ MonoBehaviour:
   patrolPoints:
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
+  playerObject: {fileID: 0}
   collectable: {fileID: 112438, guid: d56459bec5b3c424c8d1a8c8691fc466, type: 2}
   fieldOfView: 70
   viewRange: 100
@@ -1345,7 +1347,7 @@ NavMeshAgent:
   m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 15.2399998
-  m_BaseOffset: 0
+  m_BaseOffset: -1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!1001 &100100000

@@ -5,11 +5,15 @@ public class LooseObject : MonoBehaviour
 {
     bool falling;
     bool fallen;
+    MeshCollider meshCollider;
+    BoxCollider boxCollider;
     float fallingTime;
     float fallAngle;
 
 	void Start () 
     {
+        boxCollider = GetComponent<BoxCollider>();
+        meshCollider = GetComponentInChildren<MeshCollider>();
         fallingTime = 0;
         falling = false;
         fallen = false;
@@ -36,6 +40,8 @@ public class LooseObject : MonoBehaviour
 
     public void FallOver(Vector3 forceDirection)
     {
+        boxCollider.enabled = false;
+        meshCollider.enabled = true;
         if (Vector3.Angle(transform.forward, forceDirection) < 90)
             fallAngle = 90;
         else
