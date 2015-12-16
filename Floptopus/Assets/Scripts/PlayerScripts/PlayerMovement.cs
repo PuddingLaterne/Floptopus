@@ -11,23 +11,21 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5;
     public float dashSpeedMultiplier = 1.5f;
 	public float jumpTime = 1.0f;
-    public float jumpHoldThreshold = 0.5f;
 	public float gravity = 10;
 
 	Vector3 viewDirection;
     Vector3 direction;
 	Vector3 jumpDirection;
-    Vector3 wallJumpDirection;
+    Vector3 wallJumpDirection = Vector3.zero;
     CharacterController controller;
     Vector3 fallOrigin;
     Vector3 edge;
     Vector3 groundNormal;
-	float dashHeldTime;
-    float tilt;
-    float jumpStrength;
+
     bool jumpPressed;
     bool dashPressed;
     bool jumpReleased;
+    
 
     bool jumping;
 	bool grounded;
@@ -35,6 +33,7 @@ public class PlayerMovement : MonoBehaviour
     float groundTime;
     bool onEdge = false;
     Edge edgeScript;
+
 
 	float timeSinceJump;
 	float stickiness;
@@ -47,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
     Animator anim;
     PlayerHealth health;
     PlayerInk playerInk;
+    PlayerSound sound;
 
     void Awake()
     {
@@ -60,12 +60,12 @@ public class PlayerMovement : MonoBehaviour
         jumpReleased = true;
         direction = Vector3.zero;
         wallJumpDirection = Vector3.zero;
-		dashHeldTime = 0.0f;
 		jumpPressed = false;
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
         health = PlayerHealth.instance;
-        playerInk = PlayerInk.instance; 
+        playerInk = PlayerInk.instance;
+        sound = PlayerSound.instance;
 
         jumping = false;
 		grounded = false;
@@ -75,10 +75,20 @@ public class PlayerMovement : MonoBehaviour
 
 	void Update()
 	{
+        
         anim.SetFloat("speed", Mathf.Abs(controller.velocity.x) + Mathf.Abs(controller.velocity.z));
+        if (Mathf.Abs(controller.velocity.x) + Mathf.Abs(controller.velocity.z) != 0 && grounded)
+        {
+            sound.Move(true);
+        }
+        else
+        {
+            sound.Move(false);
+        }
         anim.SetBool("jumping", jumping);
         LookInDirection();
         grounded = IsGrounded();
+
 	}
 
 	void FixedUpdate ()
@@ -90,7 +100,7 @@ public class PlayerMovement : MonoBehaviour
         HangingOnEdge();
         Gravity();
         HandleJump();
-        HandleInput();
+        HandleInput();     
         
 		direction = new Vector3 (direction.x, direction.y * stickiness, direction.z);
 
@@ -174,8 +184,7 @@ public class PlayerMovement : MonoBehaviour
         if (stuck || onEdge)
         {
             Vector3 wallDirection = new Vector3(-wallJumpDirection.x, 0, -wallJumpDirection.z);
-            if(wallJumpDirection != Vector3.zero)
-                transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(wallDirection), Time.deltaTime * 10);
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(wallDirection), Time.deltaTime * 10);
         }
     }
 
@@ -194,6 +203,7 @@ public class PlayerMovement : MonoBehaviour
         }
 		timeSinceJump = 0.0f;
 		jumping = true;
+        sound.Jump();
         anim.SetTrigger("jump");
         anim.ResetTrigger("stick");
         anim.SetBool("sticking", false);
@@ -218,16 +228,14 @@ public class PlayerMovement : MonoBehaviour
     void Run()
     {
         ink.enableEmission = true;
-        direction = direction * 2.5f;
+        direction = direction * dashSpeedMultiplier;
     }
 
 	void Dash()
 	{
-        tilt = 2;
-        jumpStrength = 30;
-        jumpDirection = transform.forward + Vector3.up * tilt;
+        jumpDirection = transform.forward + Vector3.up * 2;
         jumpDirection.Normalize();
-        jumpDirection = jumpDirection * jumpStrength;
+        jumpDirection = jumpDirection * 30;
 
         if(!onEdge && !stuck)
         {
@@ -237,6 +245,7 @@ public class PlayerMovement : MonoBehaviour
             anim.SetTrigger("dash");
             anim.ResetTrigger("stick");
         }
+        sound.Jump();
 		timeSinceJump = 0.0f;
         jumping = true;
         dashing = true;
@@ -244,10 +253,29 @@ public class PlayerMovement : MonoBehaviour
 
     void Fall(Vector3 oldVelocity)
     {
-        if (controller.velocity.y < 0 && oldVelocity.y >= 0)
+        if (controller.velocity.y < 0 && oldVelocity.y >= 0 && !stuck)
         {
             falling = true;
             fallOrigin = transform.position;
+        }
+        if (grounded && falling && !stuck)//hit the ground
+        {
+            if (Mathf.Abs(fallOrigin.y - transform.position.y) > fallHeight && !stuck)
+            {
+                sound.Land();
+                anim.SetTrigger("crash");
+                health.TakeDamage(50);
+                fallOrigin = transform.position;
+            }
+            else
+            {
+                if (Mathf.Abs(fallOrigin.y - transform.position.y) >= 0.1f)
+                {
+                    sound.Land();
+                    anim.SetTrigger("bounce");
+                    fallOrigin = transform.position;
+                }
+            }
         }
         if (controller.velocity.y == 0 || grounded)
         {
@@ -255,26 +283,17 @@ public class PlayerMovement : MonoBehaviour
             falling = false;
             fallingTime = 0.0f;
         }
+
         if (falling)
+        {
             fallingTime = +Time.deltaTime;
+        }
+
         if (fallingTime >= 0.01f && !falltriggered && !(stuck || onEdge))
         {
             falltriggered = true;
             anim.SetTrigger("fall");
             anim.ResetTrigger("jump");
-        }
-        if (controller.velocity.y == 0 && oldVelocity.y < 0)
-        {
-            if (Mathf.Abs(fallOrigin.y - transform.position.y) > fallHeight && !stuck)
-            {
-                anim.SetTrigger("crash");
-                health.TakeDamage(50);
-            }
-            else
-            {
-                if (fallingTime >= 0.01f)
-                    anim.SetTrigger("bounce");
-            }
         }
         anim.SetBool("falling", falling);
     }
@@ -289,25 +308,38 @@ public class PlayerMovement : MonoBehaviour
         direction -= Vector3.up * gravity * gravityInfluence * Time.deltaTime;
     }
 
-	public void StickToSurface(bool stick)
+	public void StickToSurface(bool stick, Vector3 target)
 	{
         if (stuck != stick)
         {
             anim.SetBool("sticking", stick);
             if (stick)
             {
-                jumpDirection = Vector3.zero;
-                if(!anim.GetBool("hanging"))
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, target - transform.position, out hit))
+                {
+
+                    wallJumpDirection = hit.normal;
+                }
+                //jumpDirection = Vector3.zero;
+                if (!anim.GetBool("hanging"))
                     anim.SetTrigger("stick");
             }
             else
+            {
                 anim.ResetTrigger("stick");
+            }
         }
+       
         stuck = stick;
-		if (stick)
-			stickiness = 0.05f;
-		else
-			stickiness = 1.0f;
+        if (stick)
+        {
+            stickiness = 0.05f;
+        }
+        else
+        {
+            stickiness = 1.0f;
+        }
 	}
 
     public void HoldOntoEdge(bool hold, Vector3 edge, Edge edgeScript)
@@ -357,7 +389,10 @@ public class PlayerMovement : MonoBehaviour
 
     public bool IsDashing() { return dashing;}
 
-    public void SetWallJumpDirection(Vector3 direction) { wallJumpDirection = direction; }
+    public void SetWallJumpDirection(Vector3 direction) 
+    {
+        wallJumpDirection = direction;
+    }
 
     public void Turn()
     {
@@ -366,7 +401,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Bounce()
     {
-        Jump(1.5f);
+        Jump(2.0f);
     }
 
     void StopInk()

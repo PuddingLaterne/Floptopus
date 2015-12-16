@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerInk.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\PlayerSound.cs" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\_BloomAndFlares\BlendOneOne.shader" />
      <None Include="Assets\Standard Assets\Effects\ImageEffects\Shaders\NoiseEffectShaderRGB.shader" />
      <None Include="Assets\Standard Assets\Effects\ToonShading\Shaders\ToonBasic.shader" />

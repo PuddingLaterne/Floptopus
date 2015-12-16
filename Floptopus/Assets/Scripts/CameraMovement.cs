@@ -16,7 +16,7 @@ public class CameraMovement : MonoBehaviour
         angleX = angleX * Mathf.Deg2Rad;
         angleY = angleY * Mathf.Deg2Rad;
         dof = GetComponent<DepthOfField>();
-        radius = (minRadius + maxRadius) / 2;
+        radius = radius;
         targetPoint = target.position;
     }
 

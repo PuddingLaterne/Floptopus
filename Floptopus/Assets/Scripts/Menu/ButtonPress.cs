@@ -10,7 +10,6 @@ public class ButtonPress : MonoBehaviour
 
     public void Play()
     {
-        overlay.GetComponent<Overlay>().FadeOut();
         StartCoroutine(LoadScene(1, 0.2f));
     }
 
