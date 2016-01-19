@@ -16,6 +16,7 @@ TagManager:
   - PlayerInkUI
   - Health
   - Ink
+  - Environment
   layers:
   - Default
   - TransparentFX

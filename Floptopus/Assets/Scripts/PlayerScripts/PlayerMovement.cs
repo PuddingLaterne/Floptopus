@@ -315,13 +315,13 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("sticking", stick);
             if (stick)
             {
-                RaycastHit hit;
-                if (Physics.Raycast(transform.position, target - transform.position, out hit))
-                {
+                //RaycastHit hit;
+                //if (Physics.Raycast(transform.position, target - transform.position, out hit))
+                //{
 
-                    wallJumpDirection = hit.normal;
-                }
-                //jumpDirection = Vector3.zero;
+                //    wallJumpDirection = hit.normal;
+                //}
+                jumpDirection = Vector3.zero;
                 if (!anim.GetBool("hanging"))
                     anim.SetTrigger("stick");
             }
@@ -373,7 +373,7 @@ public class PlayerMovement : MonoBehaviour
         {
             timeSinceJump = 0;
             grounded = false;
-            direction += new Vector3(edge.x - transform.position.x, 0, edge.z - transform.position.z);
+            //direction += new Vector3(edge.x - transform.position.x, 0, edge.z - transform.position.z);
             if (edge.y - transform.position.y > 0.5f)
             {
                 direction.y += Mathf.Lerp(direction.y, edge.y, Time.deltaTime * 10);

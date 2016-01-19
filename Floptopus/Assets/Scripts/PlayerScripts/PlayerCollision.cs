@@ -26,7 +26,7 @@ public class PlayerCollision : MonoBehaviour
         switch(hit.gameObject.tag)
         {
             case "StickySurface":
-                //player.SetWallJumpDirection(hit.normal);
+                player.SetWallJumpDirection(hit.normal);
                 break;
             case "Collectable":
                 hit.gameObject.GetComponent<Collectable>().PlayerContact();
