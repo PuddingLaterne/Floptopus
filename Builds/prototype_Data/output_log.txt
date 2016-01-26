@@ -1,10 +1,10 @@
-Mono path[0] = 'C:/Users/sb-131529/Documents/GitHub/Floptopus/Floptopus/prototype_Data/Managed'
-Mono path[1] = 'C:/Users/sb-131529/Documents/GitHub/Floptopus/Floptopus/prototype_Data/Mono'
-Mono config path = 'C:/Users/sb-131529/Documents/GitHub/Floptopus/Floptopus/prototype_Data/Mono/etc'
-PlayerConnection initialized from C:/Users/sb-131529/Documents/GitHub/Floptopus/Floptopus/prototype_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55382
-Multi-casting "[IP] 141.69.53.85 [Port] 55382 [Flags] 2 [Guid] 3933278119 [EditorId] 2684637104 [Version] 1048832 [Id] WindowsPlayer(ap053085) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [141.69.53.85:55382]
+Mono path[0] = 'C:/Users/sb-131529/Documents/GitHub/Floptopus/Builds/prototype_Data/Managed'
+Mono path[1] = 'C:/Users/sb-131529/Documents/GitHub/Floptopus/Builds/prototype_Data/Mono'
+Mono config path = 'C:/Users/sb-131529/Documents/GitHub/Floptopus/Builds/prototype_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/sb-131529/Documents/GitHub/Floptopus/Builds/prototype_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55247
+Multi-casting "[IP] 141.69.53.90 [Port] 55247 [Flags] 2 [Guid] 204357417 [EditorId] 2684637104 [Version] 1048832 [Id] WindowsPlayer(ap053090) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [141.69.53.90:55247]
 Initialize engine version: 5.2.1f1 (44735ea161b3)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -13,24 +13,24 @@ Direct3D:
     Vendor:   NVIDIA
     VRAM:     3072 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\System.Core.dll (this message is harmless)
-- Completed reload, in  0.047 seconds
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Builds\prototype_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Builds\prototype_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Builds\prototype_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Builds\prototype_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Builds\prototype_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Builds\prototype_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Builds\prototype_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Builds\prototype_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Builds\prototype_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\Builds\prototype_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Builds\prototype_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.066 seconds
 desktop: 1920x1080 60Hz; virtual: 3200x1080 at -1280,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Floptopus\prototype_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\Builds\prototype_Data\Managed\System.dll (this message is harmless)
 Setting up 3 worker threads for Enlighten.
-  Thread -> id: 1344 -> priority: 1 
-  Thread -> id: ea8 -> priority: 1 
-  Thread -> id: 2264 -> priority: 1 
+  Thread -> id: 159c -> priority: 1 
+  Thread -> id: 1b78 -> priority: 1 
+  Thread -> id: 724 -> priority: 1 
