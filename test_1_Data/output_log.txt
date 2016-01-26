@@ -2,9 +2,9 @@ Mono path[0] = 'C:/Users/Stella/Documents/GitHub/Floptopus/test_1_Data/Managed'
 Mono path[1] = 'C:/Users/Stella/Documents/GitHub/Floptopus/test_1_Data/Mono'
 Mono config path = 'C:/Users/Stella/Documents/GitHub/Floptopus/test_1_Data/Mono/etc'
 PlayerConnection initialized from C:/Users/Stella/Documents/GitHub/Floptopus/test_1_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55242
-Multi-casting "[IP] 192.168.0.38 [Port] 55242 [Flags] 2 [Guid] 1787831525 [EditorId] 3143105619 [Version] 1048832 [Id] WindowsPlayer(Stella-PC) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [192.168.0.38:55242]
+PlayerConnection initialized network socket : 0.0.0.0 55150
+Multi-casting "[IP] 192.168.0.38 [Port] 55150 [Flags] 2 [Guid] 632687361 [EditorId] 2010532518 [Version] 1048832 [Id] WindowsPlayer(Stella-PC) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.0.38:55150]
 Initialize engine version: 5.1.0f2 (0e70286e975e)
 [VRDevice] Successfully created device oculus.
 GfxDevice: creating device client; threaded=1
@@ -26,7 +26,21 @@ Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Manage
 Loading C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.092 seconds
+- Completed reload, in  0.110 seconds
 desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
 <RI> Initializing input.
 <RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\System.dll (this message is harmless)
+[Compositor] ERROR: Compositor failed to initialize.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/VR/Oculus/VRDeviceOculus.cpp Line: 46)
+
+Bad config or LibOVR not found. VR disabled.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/VR/Oculus/VRDeviceOculus.cpp Line: 292)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1500 -> priority: 1 
+  Thread -> id: 1128 -> priority: 1 

@@ -54,7 +54,7 @@ public class PlayerSound : MonoBehaviour
     {
         if (moving && !walkSource.isPlaying)
         {
-            walkSource.pitch = 1 + Random.Range(-1f, 1f) * 0.2f;
+            walkSource.pitch = 1.5f + Random.Range(-1f, 1f) * 0.2f;
             walkSource.Play();
         }
         else

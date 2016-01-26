@@ -8,4 +8,6 @@ public class LevelBoundaries : MonoBehaviour
         if(other.CompareTag("Player"))
             Application.LoadLevel(1);
     }
+
+
 }

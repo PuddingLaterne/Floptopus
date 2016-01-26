@@ -31,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth -= damage;
         if (currentHealth <= 0)
-            Application.LoadLevel(1);
+            Application.LoadLevel(3);
     }
 
 	void Update () 
