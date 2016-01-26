@@ -478,6 +478,7 @@ GameObject:
   - 114: {fileID: 11474726}
   - 135: {fileID: 13544682}
   - 136: {fileID: 13647794}
+  - 82: {fileID: 8262744}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -933,7 +934,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 181180}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -51.5999985, y: 12.6999998, z: -59.7999992}
+  m_LocalPosition: {x: -21.7999992, y: 59.2000008, z: -88.9000015}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 403096}
@@ -1209,6 +1210,75 @@ Transform:
   - {fileID: 447048}
   m_Father: {fileID: 488992}
   m_RootOrder: 4
+--- !u!82 &8262744
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181180}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
 --- !u!95 &9511046
 Animator:
   serializedVersion: 3
@@ -1242,8 +1312,15 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   playerObject: {fileID: 0}
+  lost: {fileID: 8300000, guid: 207afa02ce01d0940a648ebc34a3f4c9, type: 3}
+  spotted: {fileID: 8300000, guid: 50389fcf2ecb3b240bf029fb86882773, type: 3}
+  hurt: {fileID: 8300000, guid: 707d591db9d214a4fbca3fb2004f0781, type: 3}
+  bite: {fileID: 8300000, guid: 0dde0a6883f8e4d4d899ae2615679094, type: 3}
   collectable: {fileID: 112438, guid: d56459bec5b3c424c8d1a8c8691fc466, type: 2}
-  fieldOfView: 70
+  speedNormal: 10
+  speedChasing: 25
+  playerCrunchDistance: 10
+  fieldOfView: 85
   viewRange: 100
 --- !u!135 &13544682
 SphereCollider:

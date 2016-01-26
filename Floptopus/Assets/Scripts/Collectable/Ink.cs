@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Ink : MonoBehaviour
 {
+    AudioSource audio;
     PlayerInk player;
     public float value;
     Animator anim;
@@ -12,6 +13,7 @@ public class Ink : MonoBehaviour
 
     void Start()
     {
+        audio = GetComponent<AudioSource>();
         player = PlayerInk.instance;
         collider = GetComponentInChildren<SphereCollider>();
         anim = GetComponentInChildren<Animator>();
@@ -32,6 +34,11 @@ public class Ink : MonoBehaviour
 
     public float Collect(GameObject player)
     {
+        if (audio != null && audio.clip != null)
+        {
+            audio.Play();
+        }
+
         target = player;
         collected = true;
         collider.enabled = false;

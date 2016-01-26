@@ -6,11 +6,13 @@ public class PlayerSound : MonoBehaviour
     public static PlayerSound instance;
     public AudioClip jump;
     public AudioClip land;
-    public AudioClip crash;
-    public AudioClip walk;
     public AudioClip wall;
+    public AudioClip hurt;
     AudioSource source;
     AudioSource walkSource;
+    AudioSource spraySource;
+    public float walkPitch = 1.0f;
+    public float sprayPitch = 0.5f;
 
     void Awake()
     {
@@ -21,6 +23,7 @@ public class PlayerSound : MonoBehaviour
     {
         source = GetComponents<AudioSource>()[0];
         walkSource = GetComponents<AudioSource>()[1];
+        spraySource = GetComponents<AudioSource>()[2];
 	}
 
 
@@ -31,10 +34,19 @@ public class PlayerSound : MonoBehaviour
             source.Stop();
         }
         source.clip = jump;
-        if (source.clip != null)
-        {
-            source.Play();
-        }
+        PlaySource();
+    }
+
+    public void Wall()
+    {
+        source.clip = wall;
+        PlaySource();
+    }
+
+    public void Hurt()
+    {
+        source.clip = hurt;
+        PlaySource();
     }
 
     public void Land()
@@ -44,25 +56,38 @@ public class PlayerSound : MonoBehaviour
             source.Stop();
         }
         source.clip = land;
-        if (source.clip != null)
-        {
-            source.Play();
-        }
+        PlaySource();
     }
 
     public void Move(bool moving)
     {
         if (moving && !walkSource.isPlaying)
         {
-            walkSource.pitch = 1.5f + Random.Range(-1f, 1f) * 0.2f;
+            walkSource.pitch = walkPitch + Random.Range(-1f, 1f) * 0.2f;
             walkSource.Play();
         }
-        else
-        {
-          
-            
-        }
+    }
 
+    public void Spray(bool spraying)
+    {
+        if (spraying && !spraySource.isPlaying)
+        {
+            spraySource.pitch = sprayPitch + Random.Range(-1f, 1f) * 0.2f;
+            spraySource.Play();
+        }
+        if (!spraying)
+        {
+            Debug.Log("stop spraying");
+            spraySource.Stop();
+        }
+    }
+
+    void PlaySource()
+    {
+        if (source.clip != null)
+        {
+            source.Play();
+        }
     }
 
 }

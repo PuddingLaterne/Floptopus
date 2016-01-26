@@ -33,13 +33,16 @@ public class PlayerCollision : MonoBehaviour
                 break;
             case "Enemy":
                 player.Turn();
-                if (player.IsDashing())
+                if (player.IsAttacking() || player.IsDashing())
                 {
                     hit.gameObject.GetComponent<Enemy>().JumpedAt(-hit.normal);
                 }
                 break;
             case "LooseObject":
-                hit.gameObject.GetComponent<LooseObject>().FallOver(-hit.normal);
+                if (player.IsAttacking() || player.IsDashing())
+                {
+                    hit.gameObject.GetComponent<LooseObject>().FallOver(-hit.normal);
+                }
                 break;
             case "Ink":
                 hit.gameObject.GetComponentInParent<Ink>().Collect(this.gameObject);

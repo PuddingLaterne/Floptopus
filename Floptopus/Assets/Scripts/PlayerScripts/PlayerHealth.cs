@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour 
 {
     public static PlayerHealth instance;
+    PlayerSound sound;
     public float maxHealth = 100;
     float currentHealth;
     Slider healthSlider ;
@@ -16,6 +17,7 @@ public class PlayerHealth : MonoBehaviour
 
 	void Start () 
     {
+        sound = PlayerSound.instance;
         currentHealth = maxHealth;
         healthSlider = GameObject.FindGameObjectWithTag("PlayerHealthUI").GetComponent<Slider>();
 	}
@@ -29,6 +31,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        sound.Hurt();
         currentHealth -= damage;
         if (currentHealth <= 0)
             Application.LoadLevel(3);

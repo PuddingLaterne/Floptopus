@@ -29,6 +29,7 @@ public class PlayerMovement : MonoBehaviour
     
 
     bool jumping;
+    bool attacking;
 	bool grounded;
     float airTime;
     float groundTime;
@@ -116,6 +117,13 @@ public class PlayerMovement : MonoBehaviour
 
     void HandleInput()
     {
+        if (Input.GetButton("Attack") && !attacking)
+        {
+            if (playerInk.UseInk(15))
+            {
+                Attack();
+            }
+        }
         if (Input.GetButton("Shift"))
         {
             dashPressed = true;
@@ -123,7 +131,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 ReleaseEdge();
             }
-            if (Input.GetButton("Jump") && !jumping && playerInk.UseInk(20))
+            if (Input.GetButton("Jump") && !jumping && playerInk.UseInk(10))
             {
                 Dash();
             }
@@ -134,14 +142,15 @@ public class PlayerMovement : MonoBehaviour
                 {
                     Run();
                 }
-                else
-                {
-                    ink.enableEmission = false;
-                }
             }
         }
         else
         {
+            if (!jumping)
+            {
+                ink.enableEmission = false;
+                sound.Spray(false);
+            }
             if (Input.GetButton("Jump") && (grounded || stuck) && jumpReleased)
             {
                 Jump();
@@ -219,6 +228,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (grounded && timeSinceJump > 0.1f)
         {
+            attacking = false;
             dashing = false;
             jumping = false;
             timeSinceJump = 0;
@@ -233,12 +243,33 @@ public class PlayerMovement : MonoBehaviour
     void Run()
     {
         ink.enableEmission = true;
+        sound.Spray(true);
         direction = direction * dashSpeedMultiplier;
+    }
+
+    void Attack()
+    {
+        jumpDirection = transform.forward + Vector3.up * 2;
+        jumpDirection.Normalize();
+        jumpDirection = jumpDirection * 30;
+
+        if (!onEdge && !stuck)
+        {
+            groundTime = 0.0f;
+            ink.enableEmission = true;
+            Invoke("StopInk", 0.5f);
+            anim.SetTrigger("dash");
+            anim.ResetTrigger("stick");
+        }
+        sound.Jump();
+        timeSinceJump = 0.0f;
+        jumping = true;
+        attacking = true;
     }
 
 	void Dash()
 	{
-        jumpDirection = transform.forward + Vector3.up * 2;
+        jumpDirection = transform.forward + Vector3.up * 1.5f;
         jumpDirection.Normalize();
         jumpDirection = jumpDirection * 30;
 
@@ -326,6 +357,7 @@ public class PlayerMovement : MonoBehaviour
 
                 //    wallJumpDirection = hit.normal;
                 //}
+                sound.Wall();
                 jumpDirection = Vector3.zero;
                 if (!anim.GetBool("hanging"))
                     anim.SetTrigger("stick");
@@ -393,6 +425,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     public bool IsDashing() { return dashing;}
+    public bool IsAttacking() { return attacking; }
 
     public void SetWallJumpDirection(Vector3 direction) 
     {
@@ -414,9 +447,9 @@ public class PlayerMovement : MonoBehaviour
         ink.enableEmission = false;
     }
 
-    public void Respawn()
+    public void Respawn(Vector3 respawnPoint)
     {
-        transform.position = lastGroundPos + new Vector3(lastGroundPos.x - transform.position.x, 5, lastGroundPos.z - transform.position.z) * 2;
+        transform.position = respawnPoint;
     }
 
     bool IsGrounded()

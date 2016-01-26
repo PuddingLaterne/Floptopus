@@ -13,26 +13,28 @@ public class CameraMovement : MonoBehaviour
     bool resettingRotation = false;
     float rotationInterpolation = 0.0f;
     public float radius = 3f, angleX = 110f, angleY = -45f;
+    float playerViewDir;
 
     void Start()
     {
         angleX = angleX * Mathf.Deg2Rad;
         angleY = angleY * Mathf.Deg2Rad;
         dof = GetComponent<DepthOfField>();
-        radius = radius;
         targetPoint = target.position;
     }
 
     void Update()
     {
         dof.focalLength = radius;
+   
         radius -= Input.GetAxis("Mouse ScrollWheel") * Time.deltaTime * zoomSpeed;
         radius -= Input.GetAxis("Zoom In") * Time.deltaTime * zoomSpeed * 0.1f;
         radius += Input.GetAxis("Zoom Out") * Time.deltaTime * zoomSpeed * 0.1f;
+        angleX = angleX % (Mathf.PI * 2);
 
         if (radius > maxRadius) radius = maxRadius;
         if (radius < minRadius) radius = minRadius;
-        if(Input.GetButton("Fire1"))
+        if (Input.GetButton("Fire1"))
         {
             resettingRotation = false;
             rotationInterpolation = 0.0f;
@@ -40,7 +42,8 @@ public class CameraMovement : MonoBehaviour
             angleY -= Input.GetAxis("Mouse Y") * Time.deltaTime * verticalMoveSpeed;
             if (Mathf.Cos(angleY) <= 0.1f || Mathf.Cos(angleY) >= 0.9f)
                 angleY += Input.GetAxis("Mouse Y") * Time.deltaTime * verticalMoveSpeed;
-        }else
+        }
+        else
         {
             angleX -= Input.GetAxis("Camera X") * Time.deltaTime * horizontalMoveSpeed * 0.1f;
             angleY -= Input.GetAxis("Camera Y") * Time.deltaTime * verticalMoveSpeed * 0.1f;
@@ -51,7 +54,9 @@ public class CameraMovement : MonoBehaviour
         if (Input.GetButton("CameraReset"))
         {
             resettingRotation = true;
+            playerViewDir = target.localEulerAngles.y - 90;   
         }
+
 
         if(resettingRotation)
         {
@@ -73,8 +78,7 @@ public class CameraMovement : MonoBehaviour
 
     void ResetRotation() //aligns camera rotation with player viewdirection
     {
-        rotationInterpolation += Time.deltaTime;
-        float playerViewDir = target.localEulerAngles.y - 90;     
+        rotationInterpolation += Time.deltaTime;     
         angleX = Mathf.LerpAngle(angleX, (Mathf.Deg2Rad * -playerViewDir), rotationInterpolation);
         if (rotationInterpolation >= 1)
         {

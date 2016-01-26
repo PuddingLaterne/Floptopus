@@ -5,8 +5,17 @@ public class Enemy : MonoBehaviour
 {
     public Transform[] patrolPoints;
     public GameObject playerObject;
+    public AudioClip lost;
+    public AudioClip spotted;
+    public AudioClip hurt;
+    public AudioClip bite;
+    AudioSource audio;
+
     PlayerHealth player;
     public GameObject collectable;
+    public int speedNormal = 5;
+    public int speedChasing = 10;
+    public float playerCrunchDistance = 10;
     float biteOffsetTime = 0.5f;
     float fallOffsetTime = 1.0f;
     NavMeshAgent nav;
@@ -28,6 +37,7 @@ public class Enemy : MonoBehaviour
 
 	void Start () 
     {
+        audio = GetComponent<AudioSource>();
         alive = true;
         playerVisible = false;
         player = PlayerHealth.instance;
@@ -57,14 +67,14 @@ public class Enemy : MonoBehaviour
         if (playerVisible)
         {
             nav.SetDestination(playerObject.transform.position);
-            nav.speed = 10;
+            nav.speed = speedChasing;
         }
         else
         {
             if (!confused)
             {
                 nav.SetDestination(patrolPoints[targetIndex].position);
-                nav.speed = 5;
+                nav.speed = speedNormal;
             }
         }
 	    if (!nav.pathPending)
@@ -72,7 +82,9 @@ public class Enemy : MonoBehaviour
              if (nav.remainingDistance <= nav.stoppingDistance)
              {
                  if (playerVisible)
+                 {
                      Bite();
+                 }
                  if (!nav.hasPath || nav.velocity.sqrMagnitude == 0f)
                  {
                      ApproachNextPatrolPoint();
@@ -93,8 +105,14 @@ public class Enemy : MonoBehaviour
 
     void Crunch()
     {
-        if (Vector3.Distance(transform.position, player.transform.position) < 7.5f && Mathf.Abs(AngleToPlayer()) < 60 )
+        if (Vector3.Distance(transform.position, player.transform.position) < playerCrunchDistance && Mathf.Abs(AngleToPlayer()) < 80 )
         {
+            if (bite != null)
+            {
+                audio.clip = bite;
+                audio.Play();
+            }
+            
             player.TakeDamage(20);
         }
     }
@@ -107,18 +125,26 @@ public class Enemy : MonoBehaviour
     void ApproachNextPatrolPoint()
     {
         if (targetIndex < patrolPoints.Length - 1)
-            targetIndex ++;
+        {
+            targetIndex++;
+        }
         else
+        {
             targetIndex = 0;
+        }
         nav.SetDestination(patrolPoints[targetIndex].position);
     }
 
     public void JumpedAt(Vector3 direction)
     {
-        if (Vector3.Angle(transform.forward, direction) < 90) // jumped at from behind
+        if (Vector3.Angle(transform.forward, direction) < 90)
+        {// jumped at from behind
             Fall();
+        }
         else
+        {
             Bite();
+        }
     }
 
     void OnTriggerStay(Collider other)
@@ -126,14 +152,21 @@ public class Enemy : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             RaycastHit hit;
-            if (Physics.Raycast(transform.position, playerObject.transform.position + Vector3.up - transform.position, out hit, Vector3.Distance(transform.position, playerObject.transform.position) - 5))
+            if (Physics.Raycast(transform.position, playerObject.transform.position + Vector3.up - transform.position,
+                out hit, Vector3.Distance(transform.position, playerObject.transform.position) - 5))
+            {
                 SetPlayerVisible(false);
+            }
             else
             {
                 if (Mathf.Abs(Vector3.Angle(transform.forward, playerObject.transform.position - transform.position)) < fieldOfView)
+                {
                     SetPlayerVisible(true);
+                }
                 else
+                {
                     SetPlayerVisible(false);
+                }
             }
         }
     }
@@ -148,6 +181,11 @@ public class Enemy : MonoBehaviour
     {
         if (lastFall >= fallOffsetTime)
         {
+            if (hurt != null)
+            {
+                audio.clip = hurt;
+                audio.Play();
+            }
             fallen = true;
             nav.Stop();
             anim.SetTrigger("fall");
@@ -169,13 +207,26 @@ public class Enemy : MonoBehaviour
     {
         if (playerVisible && !visible) //Player was visible before
         {
+            if (lost != null && !audio.isPlaying)
+            {
+                audio.clip = lost;
+                audio.Play();
+            }
             nav.Stop();
+            nav.velocity = Vector3.zero;
             anim.SetTrigger("confused");
             confused = true;
             confusedTime = 0.0f;
         }
-        if (!playerVisible && visible) //Player was invisible before
+        if (!playerVisible && visible)
+        {//Player was invisible before
+            if (spotted != null && !audio.isPlaying)
+            {
+                audio.clip = spotted;
+                audio.Play();
+            }
             anim.SetTrigger("chase");
+        }
         anim.SetBool("chasing", visible);
         playerVisible = visible;
     }

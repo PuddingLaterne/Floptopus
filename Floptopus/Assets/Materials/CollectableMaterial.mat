@@ -39,6 +39,20 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
+          name: _Ramp
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MetallicGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
           name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
@@ -72,20 +86,6 @@ Material:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _MetallicGlossMap
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
-      data:
-        first:
-          name: _Ramp
-        second:
-          m_Texture: {fileID: 0}
-          m_Scale: {x: 1, y: 1}
-          m_Offset: {x: 0, y: 0}
     m_Floats:
       data:
         first:
@@ -101,20 +101,28 @@ Material:
         second: .5
       data:
         first:
-          name: _Parallax
-        second: .0799999982
-      data:
-        first:
-          name: _ZWrite
-        second: 0
+          name: _Outline
+        second: .00300000003
       data:
         first:
           name: _Glossiness
         second: .259000003
       data:
         first:
+          name: _Metallic
+        second: 0
+      data:
+        first:
+          name: _ZWrite
+        second: 0
+      data:
+        first:
           name: _BumpScale
         second: -3.72000003
+      data:
+        first:
+          name: _Parallax
+        second: .0799999982
       data:
         first:
           name: _OcclusionStrength
@@ -131,14 +139,6 @@ Material:
         first:
           name: _Mode
         second: 3
-      data:
-        first:
-          name: _Metallic
-        second: 0
-      data:
-        first:
-          name: _Outline
-        second: .00300000003
     m_Colors:
       data:
         first:
@@ -147,7 +147,7 @@ Material:
       data:
         first:
           name: _Color
-        second: {r: 1, g: .8482759, b: 0, a: .774999976}
+        second: {r: 1, g: .8482759, b: 0, a: .196078435}
       data:
         first:
           name: _OutlineColor

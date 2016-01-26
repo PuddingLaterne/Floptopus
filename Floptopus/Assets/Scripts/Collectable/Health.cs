@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Health : MonoBehaviour 
 {
+    AudioSource audio;
     PlayerHealth player;
     public float value;
     Animator anim;
@@ -12,6 +13,7 @@ public class Health : MonoBehaviour
 
     void Start()
     {
+        audio = GetComponent<AudioSource>();
         player = PlayerHealth.instance;
         collider = GetComponentInChildren<SphereCollider>();
         anim = GetComponentInChildren<Animator>();
@@ -32,6 +34,10 @@ public class Health : MonoBehaviour
 
     public float Collect(GameObject player)
     {
+        if (audio != null && audio.clip != null)
+        {
+            audio.Play();
+        }
         target = player;
         collected = true;
         collider.enabled = false;

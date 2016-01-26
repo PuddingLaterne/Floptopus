@@ -1,0 +1,1966 @@
+Mono path[0] = 'C:/Users/Stella/Documents/GitHub/Floptopus/Builds/Floptopus final(I guess)_Data/Managed'
+Mono path[1] = 'C:/Users/Stella/Documents/GitHub/Floptopus/Builds/Floptopus final(I guess)_Data/Mono'
+Mono config path = 'C:/Users/Stella/Documents/GitHub/Floptopus/Builds/Floptopus final(I guess)_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Stella/Documents/GitHub/Floptopus/Builds/Floptopus final(I guess)_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55501
+Multi-casting "[IP] 192.168.0.38 [Port] 55501 [Flags] 2 [Guid] 492018213 [EditorId] 3673452126 [Version] 1048832 [Id] WindowsPlayer(Stella-PC) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.0.38:55501]
+Initialize engine version: 5.1.0f2 (0e70286e975e)
+[VRDevice] Successfully created device oculus.
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 460 (ID=0xe24)
+    Vendor:   NVIDIA
+    VRAM:     977 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.060 seconds
+desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\Builds\Floptopus final(I guess)_Data\Managed\System.dll (this message is harmless)
+[Compositor] ERROR: Compositor failed to initialize.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/VR/Oculus/VRDeviceOculus.cpp Line: 46)
+
+Bad config or LibOVR not found. VR disabled.
+ 
+(Filename: C:/buildslave/unity/build/Runtime/VR/Oculus/VRDeviceOculus.cpp Line: 292)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: c0c -> priority: 1 
+  Thread -> id: 1134 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.581856 ms
+System memory in use before: 108.5 MB.
+System memory in use after: 108.4 MB.
+
+Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 4358.
+Total: 0.818970 ms (FindLiveObjects: 0.130895 ms CreateObjectMapping: 0.046198 ms MarkObjects: 0.544580 ms  DeleteObjects: 0.096596 ms)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
+stop spraying
+UnityEngine.Debug:Internal_Log(Int32, String, Object)
+UnityEngine.Debug:Log(Object)
+PlayerSound:Spray(Boolean) (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerSound.cs:80)
+PlayerMovement:HandleInput() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:152)
+PlayerMovement:FixedUpdate() (at C:\Users\Stella\Documents\GitHub\Floptopus\Floptopus\Assets\Scripts\PlayerScripts\PlayerMovement.cs:109)
+ 
+(Filename: C:/Users/Stella/Documents/GitHub/Floptopus/Floptopus/Assets/Scripts/PlayerScripts/PlayerSound.cs Line: 80)
+
