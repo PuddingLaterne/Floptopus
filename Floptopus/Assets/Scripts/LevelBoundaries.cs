@@ -3,10 +3,22 @@ using System.Collections;
 
 public class LevelBoundaries : MonoBehaviour 
 {
+    PlayerHealth health;
+    PlayerMovement move;
+
+    void Start()
+    {
+        health = PlayerHealth.instance;
+        move = PlayerMovement.instance;
+    }
+
     void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
-            Application.LoadLevel(1);
+        if (other.CompareTag("Player"))
+        {
+            health.TakeDamage(40);
+            move.Respawn();
+        }
     }
 
 

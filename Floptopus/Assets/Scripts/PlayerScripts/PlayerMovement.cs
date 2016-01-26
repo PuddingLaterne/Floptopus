@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     Vector3 fallOrigin;
     Vector3 edge;
     Vector3 groundNormal;
+    Vector3 lastGroundPos;
 
     bool jumpPressed;
     bool dashPressed;
@@ -88,6 +89,10 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("jumping", jumping);
         LookInDirection();
         grounded = IsGrounded();
+        if (grounded)
+        {
+            lastGroundPos = transform.position;
+        }
 
 	}
 
@@ -407,6 +412,11 @@ public class PlayerMovement : MonoBehaviour
     void StopInk()
     {
         ink.enableEmission = false;
+    }
+
+    public void Respawn()
+    {
+        transform.position = lastGroundPos + new Vector3(lastGroundPos.x - transform.position.x, 5, lastGroundPos.z - transform.position.z) * 2;
     }
 
     bool IsGrounded()

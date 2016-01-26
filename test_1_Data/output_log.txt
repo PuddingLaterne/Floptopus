@@ -1,46 +1,54 @@
-Mono path[0] = 'C:/Users/Stella/Documents/GitHub/Floptopus/test_1_Data/Managed'
-Mono path[1] = 'C:/Users/Stella/Documents/GitHub/Floptopus/test_1_Data/Mono'
-Mono config path = 'C:/Users/Stella/Documents/GitHub/Floptopus/test_1_Data/Mono/etc'
-PlayerConnection initialized from C:/Users/Stella/Documents/GitHub/Floptopus/test_1_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55150
-Multi-casting "[IP] 192.168.0.38 [Port] 55150 [Flags] 2 [Guid] 632687361 [EditorId] 2010532518 [Version] 1048832 [Id] WindowsPlayer(Stella-PC) [Debug] 0" to [225.0.0.222:54997]...
-PlayerConnection already initialized - listening to [192.168.0.38:55150]
+Mono path[0] = 'C:/Users/sb-131529/Documents/GitHub/Floptopus/test_1_Data/Managed'
+Mono path[1] = 'C:/Users/sb-131529/Documents/GitHub/Floptopus/test_1_Data/Mono'
+Mono config path = 'C:/Users/sb-131529/Documents/GitHub/Floptopus/test_1_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/sb-131529/Documents/GitHub/Floptopus/test_1_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55142
+Multi-casting "[IP] 141.69.53.94 [Port] 55142 [Flags] 2 [Guid] 3819511387 [EditorId] 2010532518 [Version] 1048832 [Id] WindowsPlayer(ap053094) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [141.69.53.94:55142]
 Initialize engine version: 5.1.0f2 (0e70286e975e)
-[VRDevice] Successfully created device oculus.
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 460 (ID=0xe24)
+    Renderer: NVIDIA GeForce GTX 980 (ID=0x13c0)
     Vendor:   NVIDIA
-    VRAM:     977 MB
+    VRAM:     3072 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
-Loading C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
-Loading C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
-Loading C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.110 seconds
-desktop: 1920x1080 60Hz; virtual: 3840x1080 at -1920,0
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\test_1_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\test_1_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\test_1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\test_1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\sb-131529\Documents\GitHub\Floptopus\test_1_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.059 seconds
+desktop: 1920x1080 60Hz; virtual: 3200x1080 at -1280,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Stella\Documents\GitHub\Floptopus\test_1_Data\Managed\System.dll (this message is harmless)
-[Compositor] ERROR: Compositor failed to initialize.
- 
-(Filename: C:/buildslave/unity/build/Runtime/VR/Oculus/VRDeviceOculus.cpp Line: 46)
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\test_1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\sb-131529\Documents\GitHub\Floptopus\test_1_Data\Managed\System.dll (this message is harmless)
+Setting up 3 worker threads for Enlighten.
+  Thread -> id: c38 -> priority: 1 
+  Thread -> id: 18d0 -> priority: 1 
+  Thread -> id: 1424 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.001025 ms
+System memory in use before: 105.0 MB.
+System memory in use after: 104.7 MB.
 
-Bad config or LibOVR not found. VR disabled.
- 
-(Filename: C:/buildslave/unity/build/Runtime/VR/Oculus/VRDeviceOculus.cpp Line: 292)
+Unloading 21 unused Assets to reduce memory usage. Loaded Objects now: 3433.
+Total: 0.538367 ms (FindLiveObjects: 0.087244 ms CreateObjectMapping: 0.033531 ms MarkObjects: 0.324138 ms  DeleteObjects: 0.092522 ms)
 
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1500 -> priority: 1 
-  Thread -> id: 1128 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 15.869727 ms
+System memory in use before: 89.6 MB.
+System memory in use after: 88.7 MB.
+
+Unloading 123 unused Assets to reduce memory usage. Loaded Objects now: 408.
+Total: 2.231709 ms (FindLiveObjects: 0.040672 ms CreateObjectMapping: 0.037567 ms MarkObjects: 0.341524 ms  DeleteObjects: 1.810392 ms)
+
