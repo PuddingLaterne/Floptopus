@@ -16,7 +16,7 @@ public class LevelBoundaries : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            health.TakeDamage(40);
+            health.TakeDamage(1);
             move.Respawn();
         }
     }
