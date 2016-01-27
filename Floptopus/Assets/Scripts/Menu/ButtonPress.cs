@@ -44,6 +44,8 @@ public class ButtonPress : MonoBehaviour
         menuStates[(int)currentState].SetActive(false);
         currentState = (State)index;
         menuStates[(int)currentState].SetActive(true);
+        EventSystem.current.SetSelectedGameObject(menuStates[(int)currentState].GetComponentInChildren<Button>().gameObject);
+        
     }
 
     public void BackToMenu()
